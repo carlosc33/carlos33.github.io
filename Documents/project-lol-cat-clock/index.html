@@ -1,0 +1,241 @@
+<html>
+<head>
+  <title>LOLCAT CLOCK</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>LOLCAT CLOCK</h1>
+    </header>
+
+    <h4>
+      <big>Need The TIme?<big><small><br>
+      <span id="clock">Clock goes here</span>
+    </h4>
+
+    <img id="lolcat" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+    <blockquote id="timeEvent">This is where time events are reported</blockquote>
+
+    set Wake Up Time
+    <select id="wakeUpTimeSelector">
+      <option value="1">1 AM - 2AM</option>
+      <option value="2">2 AM - 3AM</option>
+      <option value="3">3 AM - 4AM</option>
+      <option value="4">4 AM - 5AM</option>
+      <option value="5">5 AM - 6AM</option>
+      <option value="6">6 AM - 7AM</option>
+      <option value="7">7 AM - 8AM</option>
+      <option value="8" selected>8 AM - 9AM</option>
+      <option value="9">9 AM - 10AM</option>
+      <option value="10">10 AM - 11AM</option>
+      <option value="11">11 AM - 12PM</option>
+      <option value="12">12 PM - 1PM</option>
+      <option value="13">1 PM - 2PM</option>
+      <option value="14">2 PM - 3PM</option>
+      <option value="15">3 PM - 4PM</option>
+      <option value="16">4 PM - 5PM</option>
+      <option value="17">5 PM - 6PM</option>
+      <option value="18">6 PM - 7PM</option>
+      <option value="19">7 PM - 8PM</option>
+      <option value="20">8 PM - 9PM</option>
+      <option value="21">9 PM - 10PM</option>
+      <option value="22">10 PM - 11PM</option>
+      <option value="23">11 PM - 12AM</option>
+      <option value="24">12 AM - 1AM</option>
+    </select>
+    
+    <br>
+    set Lunch Time
+      <select id="lunchTimeSelector">
+        <option value="1">1 AM - 2AM</option>
+        <option value="2">2 AM - 3AM</option>
+        <option value="3">3 AM - 4AM</option>
+        <option value="4">4 AM - 5AM</option>
+        <option value="5">5 AM - 6AM</option>
+        <option value="6">6 AM - 7AM</option>
+        <option value="7">7 AM - 8AM</option>
+        <option value="8">8 AM - 9AM</option>
+        <option value="9">9 AM - 10AM</option>
+        <option value="10">10 AM - 11AM</option>
+        <option value="11">11 AM - 12PM</option>
+        <option value="12" selected>12 PM - 1PM</option>
+        <option value="13">1 PM - 2PM</option>
+        <option value="14">2 PM - 3PM</option>
+        <option value="15">3 PM - 4PM</option>
+        <option value="16">4 PM - 5PM</option>
+        <option value="17">5 PM - 6PM</option>
+        <option value="18">6 PM - 7PM</option>
+        <option value="19">7 PM - 8PM</option>
+        <option value="20">8 PM - 9PM</option>
+        <option value="21">9 PM - 10PM</option>
+        <option value="22">10 PM - 11PM</option>
+        <option value="23">11 PM - 12AM</option>
+        <option value="24">12 AM - 1AM</option>
+      </select>
+    
+    <br>
+    set Nap Time
+    <select id="napTimeSelector">
+      <option value="1">1 AM - 2AM</option>
+      <option value="2">2 AM - 3AM</option>
+      <option value="3">3 AM - 4AM</option>
+      <option value="4">4 AM - 5AM</option>
+      <option value="5">5 AM - 6AM</option>
+      <option value="6">6 AM - 7AM</option>
+      <option value="7">7 AM - 8AM</option>
+      <option value="8">8 AM - 9AM</option>
+      <option value="9">9 AM - 10AM</option>
+      <option value="10">10 AM - 11AM</option>
+      <option value="11">11 AM - 12PM</option>
+      <option value="12">12 PM - 1PM</option>
+      <option value="13">1 PM - 2PM</option>
+      <option value="14">2 PM - 3PM</option>
+      <option value="15" selected>3 PM - 4PM</option>
+      <option value="16">4 PM - 5PM</option>
+      <option value="17">5 PM - 6PM</option>
+      <option value="18">6 PM - 7PM</option>
+      <option value="19">7 PM - 8PM</option>
+      <option value="20">8 PM - 9PM</option>
+      <option value="21">9 PM - 10PM</option>
+      <option value="22">10 PM - 11PM</option>
+      <option value="23">11 PM - 12AM</option>
+      <option value="24">12 AM - 1AM</option>
+    </select>
+
+  <br>
+  <button id="partyTimeButton">Party Time!arty Time!; NOTE: IF YOU HAVE !DOCTYPE ON TOP= NO COLOR CHANGE FOR BUTTON!!!
+      </button>
+        <footer>
+         <p>&copy; <strong>Skillcrush 2016_Code_Written_By_Carlos_Chico<br>Contact Developer Here: CARLOSCHICO@MY.UNT.EDU</strong></p>
+        </footer>
+      </div>
+
+  <script>
+     /*** WORKING >=100% ***/
+     var wakeUpTime;
+     var noon = 12;
+     var evening = 17;
+     var lunchTime;
+     var partyTime;
+     var napTime;
+
+     var updateClock = function()
+     {
+     var time = new Date().getHours();
+     var messageText;
+     var image
+    
+     var lolcat = document.getElementById("lolcat");
+     var timeEvent =document.getElementById("timeEvent");
+    
+     if (time == wakeUpTime){image = src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg"; alt="wake up time">""; 
+                              messageText = "Good Morning!";}
+     else if (time == lunchTime){image = src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg"; alt="luch time">""; 
+                                 messageText = "It's Milk and Cookies Time!";}
+     else if (time == partyTime){image = src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/partyTime.jpg"; alt="Party Time!">""; 
+                                 messageText = "It's Play Time!";}
+     else if (time == napTime){image = src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat3.jpg"; alt="nap time">"";
+                               messageText = "Even miracles take time...";}
+     else if (time < noon){image=sec="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg"; alt="wake up time">""; 
+                          messageText = "Good Morning!";}
+     else if (time > evening) {image =src= "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg"; alt="good evening">""; 
+                              messageText = "Good Evening!";}
+     else {image =src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg"; alt="good evening">""; 
+                              messageText = "Good Afternoon!";}    
+    
+     lolcat.src=image;
+      timeEvent.innerText=messageText;
+
+      var showCurrentTime = function()
+      {
+ 
+      var clock = document.getElementById("clock");
+      var currentTime = new Date();        
+      var hours = currentTime.getHours();
+      var minutes = currentTime.getMinutes();
+      var seconds = currentTime.getSeconds();
+      var meridian = "AM";
+    
+    // Set hours 
+      if (hours >= noon) 
+      { 
+      meridian = "PM"; 
+    }  
+      if (hours > noon) 
+      { 
+      hours = hours - 12; 
+    }
+ 
+    // Set Minutes
+      if (minutes < 10)
+      {
+        minutes = "0" + minutes;
+    }
+ 
+    // Set Seconds
+      if (seconds < 10)
+      {
+     seconds = "0" + seconds;
+    }
+ 
+      var clockTime = hours + ':' + minutes + ':' + seconds + " " + meridian + "!";
+ 
+      clock.innerText = clockTime
+    };
+
+      showCurrentTime();
+    };
+   
+      //seems to demand to be bind, otherwise seconds fail to +
+      var oneSecond = 1000;
+      setInterval(updateClock, oneSecond);
+      updateClock();
+   
+      var partyTimeButton = document.getElementById("partyTimeButton");
+      var partyEvent = function()
+      {
+      if (partyTime < 0) 
+      {
+      partyTime = new Date().getHours();
+       partyTimeButton.innerText="Party Over";
+        partyTimeButton.style.backgroundColor="#ffff33"; 
+    }
+      else
+      {
+      partyTime = -1;
+        partyTimeButton.innerText="Party Time!";
+         partyTimeButton.style.backgroundColor="#33ffad";
+        }  
+      };
+
+      partyTimeButton.addEventListener("click", partyEvent);
+      partyEvent();
+      var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+      var wakeUpEvent = function()
+      {
+      wakeUpTime = wakeUpTimeSelector.value;
+    };
+
+      wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+      var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+      var lunchTimeEvent = function()
+      {
+      lunchTime = lunchTimeSelector.value;
+    };
+
+      lunchTimeSelector.addEventListener("change", lunchTimeEvent);
+      var napTimeSelector = document.getElementById("napTimeSelector");
+      var napTimeEvent = function()
+      {
+      napTime = napTimeSelector.value; 
+    };
+
+      napTimeSelector.addEventListener("change", napTimeEvent);
+    </script>
+  </body>
+</html>
