@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MAGIC 8 BALL</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+  <div class="full-width">
+       <nav>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+            </ul>             
+      </nav>
+   </div>
+  <div class="page">
+    <header>
+      <h1>MAGIC <span>8</span> BALL</h1>
+    </header>
+    <div class="ball" style="position:relative; width:80%" >
+      <p id="answer" class="answer" align="center">
+        THIS IS WHERE THE ANSWER GOES
+      </p>
+       <img id="8ball" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
+    </div>
+    <br><br>
+    <div class="button" style="position:relative; width:80%">
+      <button id="questionButton">ASK ME ANYTHING </button>
+    </div>
+    <footer>
+     <p>&copy; Skillcrush 2016_Code_Written_By_Carlos_Chico<br>Contact: CARLOSCHICO@MY.UNT.EDU</p></footer>
+<script>    
+$(document).ready(function(){
+
+var question = " "
+var answerList = ["It is certain", "It is decidedly so", "Without a doubt", "Yes, definitely", "You may rely on it", "As I see it, yes", "Most likely", "Outlook good", "Yes", "Signs point to yes", "Reply hazy try again", "Ask again later", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Do not count on it", "My reply is no", "My sources say no", "Outlook not so good"];
+  $("#answer").hide();
+
+
+var yourOnMagic = function(question){
+  $("#8ball").attr("src","https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+  $("#answer").hide();
+  $("#answer").fadeIn(+13000);
+  question = prompt("Ask me anything!");
+  var randomNumber = Math.random();
+  var randomNumberArray = randomNumber * answerList.length
+  var randomIndex = Math.floor(randomNumberArray);
+  var randomAnswer = answerList[randomIndex];
+  $("#answer").text(randomAnswer);
+};
+var reloadImage = function(){
+	$("#8ball").attr("src","https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
+	$("#8ball").effect("shake");
+
+};
+$("#questionButton").click(reloadImage);
+$("#questionButton").click(yourOnMagic);
+
+});
+  </script>
+  </div>
+  </body>
+</html>

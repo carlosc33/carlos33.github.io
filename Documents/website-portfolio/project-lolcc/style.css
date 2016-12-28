@@ -1,0 +1,92 @@
+
+nav {
+  float: right;
+  padding: 33px 72px;
+  padding-top: 0px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px; 
+  color: #828282;
+  padding-left: 0px;
+}
+body {
+  background-color: #fff;
+}
+.page {
+  width: 80%;
+  max-width: 960px;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 55px;
+}
+body {
+  font: 16px/16px 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  color: #f16059;
+  margin: 0px;
+  padding: 0px;
+  text-transform: uppercase;
+}
+header{
+  padding-top: 0px;
+  font-size: 27px;
+  line-height: 8px;
+  padding-left: 75px;
+}
+h4 {
+  font-size: 16px;
+  font-family: 'Roboto'; 
+  padding-left: 23px;
+}
+h4 #clock {
+  font-size: 21px;
+  display: block;
+  padding: 0px 0px;
+  padding-bottom: 0px;
+}
+h1 {
+  font-family: 'Bungee Shade', cursive;
+}
+h2, h3, h6 {
+  font-family: 'Roboto', cursive;
+}
+blockquote {
+  font: 2em/1em 'Open Sans', sans-serif;
+  -webkit-text-stroke: 1px #f16059;
+  text-shadow: 1px 2px #f16059;
+  margin: -80px 0 100px 0;
+  color: #fff;
+}
+blockquote:before { content: '"'; }
+blockquote:after { content: '"'; }
+#lolcat {
+  margin: 0 auto;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 10px;
+  border:10px solid #f16059;
+}
+#wakeUpTimeSelector, #lunchTimeSelector, #napTimeSelector {
+  padding: 10px 0;
+}
+#partyTimeButton {
+  background-color: #222;
+  width: 300px;
+  font-family: 'Bungee', cursive;
+  font-size: 18px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+footer p {
+  font-family: 'Roboto';
+  text-transform: uppercase;
+  font-size: 12px;
+}
