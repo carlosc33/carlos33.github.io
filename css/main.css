@@ -2,8 +2,14 @@
 body{
 		font-family: 'Source Sans Pro', sans-serif;
 }
-#about, #work, #contact {
-        height: 600px;
+#about{
+    height: 800px;
+}
+#work{
+	height: 600px;
+}
+#contact {
+    height: 666px;
 }
 
 /***** GRID *****/
@@ -22,7 +28,7 @@ body{
 
 /***** HEADER *****/
 header {
-	height: 800px;
+	height: 900px;
 	background: url('hero.png');
 	background-size: cover;
 }
@@ -76,23 +82,34 @@ header h2 span {
 }
 
 /***** WORK SECTION *****/
+
 #work {
-    background-color: #f9ceb7;
+	height: 555px;
+	background-image: url('mpv.png');
+	background-size: cover;
+}
+#work {
+    background-color: #fff;
     text-align: center;
 }
 #work .full-width {
-	padding: 115px 0;
+	padding: 60px 0;
 }
 #work img {
-	padding-bottom: 30px;
+	padding-bottom: 3px;
+
 }
-#work h3{
+#icon-ruby-mini-logo {
+	height: 144px;
+}
+#work h3 {
+	font-family:'Lora', serif;
 	font-size: 24px;
 	width:
 	margin: 0 auto;
 }
-#work p{
-	font-family: 'Lora', serif;
+#work p {
+	font-family: 'Roboto';
 	font-size: 18px;
 	line-height:
 	color:#2b2b2b;
@@ -104,10 +121,13 @@ header h2 span {
 	background-color: #ebebeb;
 }
 #contact .full-width {
-	padding: 110px 0;
+	padding: 111px 0;
 }
 #contact-image {
-	border: 12px solid #ffffff;
+	border: 12px solid #fff;
+	
+	
+
 }
 #contact h2, #email-header, #socialmedia-header, #contact {
 	padding-left: 115px;
