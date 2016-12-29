@@ -1,0 +1,158 @@
+/***** BASE STYLES *****/
+body{
+		font-family: 'Source Sans Pro', sans-serif;
+}
+#about {
+	height: 150px;
+	border-bottom: 1px solid #eee;
+}
+#menu{
+	border-right: 1px solid #eee;
+	float: left; 
+	padding-left: 191px;
+	width: 21%;
+	height: 222px;
+}
+#reviews {
+	border-right: 1px solid #eee;
+	float: left; 
+	width: 27%;
+	height: 222px;
+}
+#locations { 
+	height: 222px;
+}
+#footer {
+	border-top: 1px solid #eee;
+	width: 1200px;
+	margin: auto;
+}
+/***** GRID *****/
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+.half-width {
+	width:  600px;
+	float: left;
+}
+.third-width {
+	width: 400px;
+	float: left;
+}
+/***** HEADER background: *****/
+header h1 span {
+	font-size: 30px;
+	color:	green;
+	padding: 50px 0;
+}
+nav {
+	float: right;
+	padding: 20px 0px;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px; 
+	color: 	green;
+	padding-left: 10px;
+}
+header h2 {
+	width: auto;
+	font-size: 20px;
+	line-height: ;
+	color: green;
+	padding: 20px 0;
+}
+header h1{
+	font-size: 30px;
+	color: black;
+}
+/***** ABOUT SECTION *****/
+#about .full-width {
+    padding: 3px 0;
+}
+#about h2 {
+    font-size: 18px;
+    color: 	green;
+}
+#about p {
+    font-size: 18px;
+    color: black;
+    line-height: 20px;
+}
+/***** WORK SECTION *****/
+#menu,#reviews, #locations {
+    background-color: none; 
+}
+#menu .full-width {
+	padding: 5px 0;
+}
+#menu h4 {
+	text-align: left;
+	font-size: 18px;
+}
+#menu span {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: green;
+}
+/*** #work img ***/
+#reviews h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	padding: 0 36px;
+}
+#reviews p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	padding: 0 39px;
+}
+#locations h4 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	text-align: left;
+	padding: 0 36px;
+}
+#locations p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	padding-left: 30px;
+}
+/*** FOOTER ***/ 
+#footer	h3 span {
+	font-family: 'Wisdom Script', script;
+	transform: lowercase;
+	color: green;
+	font-size: 13px;
+	line-height: ;
+	padding: 5px 0;
+}
+#footer h3 {
+	padding-right: 89px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

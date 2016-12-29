@@ -11,7 +11,6 @@ body{
 #contact {
     height: 666px;
 }
-
 /***** GRID *****/
 .full-width {
 	width: 1200px;
@@ -25,12 +24,12 @@ body{
 	width: 400px;
 	float: left;
 }
-
 /***** HEADER *****/
 header {
 	height: 900px;
 	background: url('hero.png');
 	background-size: cover;
+	padding-top: 2px;
 }
 header h1 {
 	font-family: 'Lora', serif;
@@ -50,7 +49,7 @@ nav ul li a {
 	text-decoration: none;
 	font-size: 18px; 
 	color: #828282;
-	padding-left: 80px;
+	padding-left: 0px;
 }
 header h2 {
 	width: auto;
@@ -64,7 +63,6 @@ header h2 span {
 	font-family: 'Lora', serif;
 	color: #2b2b2b;
 }
-
 /***** ABOUT SECTION *****/
 #about .full-width {
     padding: 80px 0;
@@ -80,9 +78,7 @@ header h2 span {
     line-height: 40px;
     padding-right: 50px;
 }
-
 /***** WORK SECTION *****/
-
 #work {
 	height: 555px;
 	background-image: url('mpv.png');
@@ -90,17 +86,25 @@ header h2 span {
 }
 #work {
     background-color: #fff;
-    text-align: center;
+   text-align: center;
 }
 #work .full-width {
-	padding: 60px 0;
+	padding: 80px 0;
 }
 #work img {
 	padding-bottom: 3px;
-
 }
 #icon-ruby-mini-logo {
 	height: 144px;
+}
+#work h2 {
+	text-align: left;
+	font-family:'Lora', serif;
+	font-size: 24px;
+	margin: 0 auto;
+	padding-right: 1055px;
+	width: 0;
+
 }
 #work h3 {
 	font-family:'Lora', serif;
@@ -115,22 +119,25 @@ header h2 span {
 	color:#2b2b2b;
 	padding: 0 35px;
 }
-
 /***** CONTACT SECTION ****/
 #contact {
 	background-color: #ebebeb;
 }
 #contact .full-width {
 	padding: 111px 0;
+	padding-top: 120px;
+	padding-bottom: 20px;
 }
 #contact-image {
 	border: 12px solid #fff;
-	
-	
-
 }
-#contact h2, #email-header, #socialmedia-header, #contact {
+#email-header {
 	padding-left: 115px;
+	padding-top: 8px;
+}
+#contact h2, #socialmedia-header, #contact {
+	padding-left: 115px;
+	padding-top: 69px;
 }
 #contact h2 {
 	font-family: 'Lora', serif;
@@ -165,15 +172,6 @@ header h2 span {
 	font-size: 32px;
 	padding-right: 40px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
