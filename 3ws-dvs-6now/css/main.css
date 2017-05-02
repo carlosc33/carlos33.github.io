@@ -1,0 +1,4147 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@charset "UTF-8";
+
+
+body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+}
+/*MOBILE-GLOBAL*/
+.top-img, .newsd-i, .reviewsd-i,
+ .reviews-img, 
+  .about-map {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+.btn {
+    background-color: #b21e49;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.5em;
+    width: 100%;
+    display: block;
+}
+
+ .btn:hover {
+        background-color: #ff1256;
+}
+
+
+input.btn {
+    background-color: #ff1256;
+}
+
+
+  input.btn:hover {
+        background-color: #b21e49;
+ }
+
+.molly-btn {
+    background-color: #ff1256;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 5px 5px 0px #DADADA;
+    height: 2.5em;
+    width: 100%;
+    display: block;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-decoration: none;
+}
+
+
+.molly-btn:hover {
+        background-color: #9cc6cc;
+}
+
+
+
+ /*NOTE: display: none removes object(s) properties 
+ while visibility: hidden removes object(s), but leaves their properties*/
+.sidebar-newsletter-2, .sidebar-newsletter-3, .sidebar-review-2, .rs2-feed-item-1, .rs2-feed-item-2, 
+ .rs2-feed-item-3, .rs2-feed-item-4, .rs2-feed-item-5, .rs2-feed-item-6, 
+  .sidebar-newsletter-4r, .sidebar-newsletter-5r, .sidebar-newsletter-6r, 
+   .feed-info p, .review-info p, .sidebar-concerts-newsletter, 
+    .team-description, .sidebar-desktop-newsletter-7r, .sidebar-desktop-newsletter-8r, .sidebar-desktop-newsletter-9r {
+    display: none;
+}
+
+/* LOGO & NAV =============================================================== */
+.main-header {
+    width: 100%;
+    background-color: #eee;
+    margin: auto;
+}
+
+#logo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    #logo img {
+        width: 100%; 
+        margin:auto;
+    }
+
+nav {
+    width: 100%;
+    background: #ddd;
+    margin-top: -4.5%;
+}
+
+nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+            padding: 15px 0;
+        }
+             nav ul li a {
+                font-size: 1.125em;
+                text-transform: uppercase;
+                color: #333;        
+            }
+            nav ul li a:hover{
+                color: #FF1256;
+            }
+    nav i {
+        padding-right:10px;
+    }
+
+/* Main Content =========================== */
+main {
+    width: 96%;
+    padding: 0 2%;
+    margin:auto;
+    max-width: 960px;
+}
+
+
+/* HOME PAGE AND REVIEWS PAGE ============================================ */
+
+/*this for the img under the 1st/top logo */
+.hero-area img {
+    float: right;
+    margin-top: 0%;
+    margin-right: 10%;
+    margin-left: 0%;
+    margin-bottom: 8%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%; 
+    width: 100%;  
+}
+
+.newsd-i img {
+    margin-left:  -5%;
+    width: 100%;
+}
+
+
+.reviews-img img {
+    margin-right: 10%;
+    width: 100%;
+}
+
+/*Home Landing Pg: : Wilco Announces..." */
+.top-info h1 {
+   font-size: 1.4em;
+    color: #000; 
+    margin-left: 0%;
+    width: 85%;
+}
+.top-info p {
+    margin-left: 3%;
+}
+
+/* "Newletter Signup"   on >> Home>> (homeLANDING) <<(p)*/
+.sidebar-newsletter {
+    width: 100%;   
+    margin-top: 3%; 
+    color: #000;
+    border-top: 1px solid gray;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    margin-left: -2%;
+    font-size: 1em;
+}
+
+
+
+
+/*White Text Box*/
+.sidebar-newsletter  input[type="text"] {
+    margin: 5px;
+    margin-left: 0.3%;
+    padding: 5px;
+    padding-bottom: 9%;
+
+}
+
+/*Hot Pink Box*/
+.sidebar-newsletter  input {
+    box-sizing: border-box;
+    padding-top: 4%;
+    padding-bottom: 14%;
+    width: 100%;
+}
+
+
+
+/*NOTE: HIDDEN ON MOBILE "Upcoming Concerts - SEE ALL" starting on HOME (p)*/
+.sidebar-newsletter-2 {
+    padding-bottom: 9%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray; 
+   
+   }
+/*NOTE: HIDDEN ON MOBILE "Frequently Asked Questions - SEE ALL" starting on HOME (p)*/
+.sidebar-newsletter-3 {
+    padding-bottom: 9%;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    border-bottom: 1px solid gray; 
+}
+
+/*<<><><><><><><><>><>   News Detail  <><><><><><><><><><><>>
+"Wilco Announces"*/
+.top-info-newsd h1 {
+    color: #000;
+    font-size: 1.4em;
+    padding-top: 13%;
+    width: 80%;
+}
+
+
+/*"Newsletter Signup" on >> Home>> (homeNEWS-DETAIL) <<(p)*/
+
+.sidebar-newsletter-home-d {
+   margin-top: 8%;
+   margin-bottom: -56%;
+   border-top: 1px  solid gray;
+   font-size: 1em;
+}
+
+
+
+/*White Text Box*/
+.sidebar-newsletter-home-d  input[type="text"] {
+     margin: 5px;
+    margin-left: 0.3%;
+    padding: 5px;
+    padding-bottom: 9%;
+}
+/*Hot Pink Box*/
+.sidebar-newsletter-home-d  input {
+   box-sizing: border-box;
+    padding-top: 4%;
+    padding-bottom: 14%;
+    width: 100%;
+}
+
+
+
+
+
+/*<><><><><>   REVIEW HOME Pg SIDEBAR(S) SOLUTION CSS Part <><><>*/
+.sidebar-review-1 {
+    color: #000;
+    float: right;
+    margin-top: -8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%;   
+    width: 100%; 
+}
+
+
+.sidebar-review-2 {
+    
+    clear: both;
+    display: inline-block;  
+    float: left;
+    margin-top: -133%;
+  
+}
+
+/*<><><><><><><><> SIDE BAR>> Left Side <<:Concert Tickes <><><><><><>*/
+
+.sidebar {
+    width: 100%;
+    color: #000;
+    margin-top: -8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%;    
+}
+
+.sidebar-review-1 a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+.sidebar a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+.sidebar-review-1  p  {
+    padding-right: 50%;
+    padding-bottom: 0%;
+    margin-top: -9%;
+    margin-bottom: -2%;
+    float: right;
+    font-size: 13px;
+    color: #000;
+}
+
+
+
+.sidebar p  {
+    padding-right: 50%;
+    padding-bottom: 0%;
+    margin-top: -9%;
+    margin-bottom: -2%;
+    float: right;
+    font-size: 13px;
+    color: #000;
+}
+
+.sidebar-c1 {
+    width: 100%;
+    color: #000;
+    margin-top: -8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%;    
+}
+
+.sidebar-c1 a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+/*LEFT-boxes for img-june 15*/
+.sidebar-c1 img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;  
+    width: 12%; 
+}
+
+/*"Concert Tickets" 
+starting on Top-Left-Side (sl)=== */
+.sl-1tk {
+    padding-bottom: 15%;
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+}
+
+.sl-2tk,.sl-3tk,.sl-4tk,.sl-5tk {
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+}
+/*Concerts (p): "Upcoming Concerts" on top-left corner*/
+.sl-1tk h3 {
+    color: #000;
+    padding-bottom: 5%;
+}
+.sl-1tk h4, .sl-2tk h4,.sl-3tk h4,
+.sl-4tk h4,.sl-5tk h4 {
+    color: #000;
+    margin-left: 19%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+
+.sl-1tk p, .sl-2tk p,.sl-3tk p,
+.sl-4tk p,.sl-5tk p {
+    margin-right: 4%;
+}
+.sl-1tk  a, .sl-2tk a,.sl-3tk a,
+.sl-4tk a,.sl-5tk a {
+    color: #fff;
+    margin-top: 15%;
+    margin-left: 19%;
+    margin-bottom: -11%;
+    text-decoration: none;
+    width: 60%;
+}
+/* SIDE BAR>> Right Side <<:Concert Tickes; ============================================================= */
+.sidebar-c2 {
+    width: 100%;
+    color: #000;
+    margin-top: -8%;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%;    
+}
+.sidebar-c2 a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+/*RIGHT-boxes for img-june 15*/
+.sidebar-c2 img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+    width: 12%;
+}
+
+/*"Concert Tickets" 
+starting on Right-Side (sl)=== */
+.sr-1tk, .sr-2tk,.sr-3tk,.sr-4tk {
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+}
+
+/*seperated sr-5tk box to remove the border-bottom without using an: ":nth-child()" child remover*/ 
+.sr-5tk {
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-bottom: 9%;
+}
+
+/*Concerts (p): "Upcoming Concerts" on Right Side*/
+.sl-1tk h3 {
+    color: #000;
+}
+.sr-1tk h4, .sr-2tk h4,.sr-3tk h4,
+.sr-4tk h4,.sr-5tk h4 {
+    color: #000;
+    margin-left: 19%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+/*the "em" being usedd to match the "p" font-sizes here "sidebar right (sr)"
+ to those of sidebar left (sl) which is above*/
+.sr-1tk p, .sr-2tk p,.sr-3tk p,
+.sr-4tk p,.sr-5tk p {
+    font-size: 0.80em;
+    margin-top: -9%;
+    margin-left: 19%;
+    color: #000;
+}
+.sr-1tk  a, .sr-2tk a,.sr-3tk a,
+.sr-4tk a,.sr-5tk a {
+    color: #fff;
+    margin-top: -2%;
+    margin-left: 19%;
+    margin-bottom: -11%;
+    text-decoration: none;
+    width: 60%;
+}
+
+
+
+
+.sidebar-c1 p  {
+    padding-right: 50%;
+    padding-bottom: 0%;
+    margin-top: -9%;
+    margin-bottom: -2%;
+    float: right;
+    font-size: 13px;
+    color: #000;
+}
+
+
+
+/*this is the Recent News & Reviews h2 ==========================================*/
+.sidebar-upcoming-concerts  h2 {
+    padding-bottom: 3%;
+}
+
+.sidebar-upcoming-concerts  h4 {
+    float: right;
+    padding-right: 49%;
+    margin-top: -3%;
+} 
+
+/*  HOME-PG/NEWS & FEED SECTON ======================================== */
+
+.feed-item {
+    text-decoration: none;
+    border-top: 1px solid gray;
+    padding-top: 2%;
+    padding-bottom:  0%;
+    margin-top: 0%;
+    clear: both;
+}
+ .feed-item:nth-child(7){
+            border-bottom: none;
+        }
+
+/*this is for the  img's BORDERS */
+.feed-img {
+  
+    width: 45%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0.5%;
+    padding-left: 1%;
+    padding-right: 12%;
+    padding-bottom: 0.5%;
+    height: auto;
+}
+/*MOBILE-"Recent News & Reviews!!!"*/
+.feed h2 {
+    color: #000;
+    float: right;
+    margin-top: -2%;
+    padding-top: 2%;
+    padding-right: 50.55%;
+     text-decoration: none;
+     clear: both;
+}
+
+.feed h4 {
+    text-decoration: none;
+    float: right;
+    padding-right: 2%;
+    padding-left: 0%;
+    margin-top: 0%;
+    clear: both;
+}
+
+
+.feed-info h4 {
+    margin-top: -35%;
+    width: 45%;
+}
+
+.feed-item h4 a {
+     color: #000;
+      text-decoration: none;
+}
+
+.feed-item h4 a:hover {
+     color: #23a4cc;
+}
+/*Home Pg: NECESSARY to remove underline of text 
+on top left Feed imgs "NEWS" & "Reviews"*/
+.feed-item h3  {
+    margin-bottom: -2%;
+    display: inline-block;
+    
+}
+
+/* REVIEWS HOME-PG ========================================================*/
+.review {
+    width: 100%;
+}
+/*"FIND OUT MORE" btn*/
+.sidebar-r-box {
+   padding-top: 20%;
+   padding-bottom: -3%;
+   margin-top: -27%;
+   border-top: 1px  solid #ccc;
+   border-bottom: 1px solid #ccc;
+
+}
+
+.sidebar-r-box  a {
+    margin-bottom: 5%;
+}
+
+/*'Newsletter Signup" on Reviews Detail Pg */
+.sidebar-newsletter-review-d {
+   padding-top: 0%;
+   padding-bottom: 0%;
+   margin-top: 8%;
+   margin-bottom: -55%;
+   border-top: 1px  solid #ccc;
+}
+
+
+/*White text box: Newsletter Signup*/
+.sidebar-newsletter-review-d  input[type="text"] {
+    margin: 5px;
+    padding: 5px;
+    padding-bottom: 9%;
+}
+/*Hot Pink box */
+.sidebar-newsletter-review-d  input {
+    box-sizing: border-box;
+    padding-top: 4%;
+    padding-bottom: 12%;
+    width: 100%;
+}
+
+/*MOBILE-<><><><><><><><>   Reviews Home   <><><><><><>*/
+.top-info-review h1 {
+    font-size: 1.4em;
+    width: 67%;
+}
+
+.review h3 {
+    color: #000;
+    padding-right: 30%; 
+
+}
+
+/*Reviews Home (p): Use for control  width of tag lines next to imgs
+ex."Mumford & Sons..."*/
+.review-info h4 {
+    
+    width: 100%;
+}
+
+.review-item h4 a {
+    color: #000;
+    display: inline-block;
+    margin-top: -13%;
+    margin-left: 28%;
+    padding-left: 0%;
+    text-decoration: none;
+    width: 90%
+}
+
+.review-item h4 a:hover {
+     color: #23a4cc;
+}
+/*Home (p): NECESSARY to remove underline of text 
+on top left Feed imgs "NEWS" & "Reviews"*/
+.review-item h5  {
+    
+    display: inline-block;
+}
+
+.review h4 {
+    float: right;
+    padding-right: 5%;
+    padding-left: 0%;
+    margin: 0%;
+    margin-top: -72%;
+    margin-right: 27%;
+    margin-left: -77%;
+}
+
+.review p {
+    width: 100%;
+    float: right;
+    color: #000;
+    padding-right: -66%;
+    margin-top: -9%; 
+}
+
+.review-item {
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 3%;
+    width: 100%;   
+}
+
+.review-item:nth-child(7){
+            border-bottom: none;
+        }
+
+
+
+/*MOBILE-*/
+.review-info {
+    
+    float: right;
+
+    width: 42%;
+}
+/*used backgroud or frame effect since borders were less couperative here v. H-pg */
+.review-img {
+    width: 45%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 13.5%;
+    padding-bottom: 0%;
+    height: auto;
+}
+
+/*MOBILE-ABOUT SECTION: FOR MEET THE TEAM SECTION (imgs)^/
+
+/*MOBILE-<><><><><><><><><><><><> ABOUT Pg <>><><><><><><>*/
+
+/*MOBILE-ABOUT SECTION*/ 
+/*.about-map {
+   
+    
+   margin-left: 0%;
+    width: 100%;
+}*/
+
+
+
+
+
+
+/*MOBILE-ABOUT PAGE ================================ */
+/*Map-BEFORE iframe was installed/
+.about-top-info-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        margin-top: 8%;
+        margin-left: 9%;
+        margin-right: 0%;
+        padding-top: 3%;
+        padding-bottom: 60%;
+        width: 80%;
+}*/
+
+.map-container iframe {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    padding-bottom: 0%;
+    margin-left: 5%;
+
+    width: 90%;
+}
+
+/*MAP-BEFORE ifram installed
+#about-top-info-img-map {
+         background-image: url("../img/map.png");
+}*/
+
+
+
+/*"Contact Us"*/
+.about-top-info h1 {
+    font-size: 1.4em;
+}
+/*"Email, Telephone, Address--INFORMATION"*/
+.about-top-info h5 {
+    margin: -10%;
+    margin-top: -11%;
+    margin-left: 0%;
+    margin-right: 45%;
+    float: right;
+    color: #000;
+}
+/*MOBILE-*/
+.mission h1 {
+    font-size: 1.4em;
+}
+
+.team h1 {
+    font-size: 1.4em;
+}
+.mission {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 0;
+}
+/*MOBILE-*/
+.team {
+        padding-top: 15px;
+}
+
+.team-member {
+        padding: 15px 0;
+}
+
+.team-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 20px;
+        padding-bottom: 40%;
+        width: 40%;
+}
+
+.team-name {
+
+}
+/*MOBILE-*/
+.team-title {
+    margin-top: -5%;
+}
+.team-description {
+}
+
+#team-img-jack {
+        background-image: url("../img/guy.png");
+}
+
+#team-img-lana {
+        background: url('../img/girl-1.png');
+}
+
+#team-img-willow {
+        background: url('../img/girl-0.png');
+}
+/*MOBILE-*/
+#team-img-jack,
+#team-img-lana,
+#team-img-willow{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.about h3 {
+    float: right;
+    padding-right: 55%;  
+    margin-top: -18%;
+    margin-right: 9%;
+    margin-bottom: -3%;
+    padding-top: -9%;
+    padding-bottom: -9%;
+}
+
+.about h4 {
+    float: right;
+    padding-right: 60%;
+    padding-left: 9%;
+    margin: -35%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: -39%;
+    margin-bottom: -8%;
+    height: -60%;
+}
+/*MOBILE-*/
+.about p {
+    width: 53%;
+    float: right;
+    margin-top: -30%;
+    padding-top: 0%; 
+    padding-left: 34%;
+    padding-right: -9%;
+    padding-bottom: -30%;
+    margin-top: -30%;
+    color: #000;
+}
+
+/*MOBILE-DETAILED PAGES ======================================================== */
+.reviews-img, .news-img{
+    width:100%;
+}
+
+
+/*MOBILE-<><><><><><><><>   REVIEW DETAIL   <><><><><><>*/
+
+/*"Beirt's New Album..."*/
+.top-info-reviewsd h1 {
+    font-size: 1.4em;
+    width: 67%;
+
+}
+/*MOBILE-<><><><><><><><>   FAQ   <><><><><><>*/
+
+.top-info-faq h1 {
+    font-size: 1.4em;
+}
+/*<><><><><><><><><><><><><>   MOBILE-FOOTER   <><<><><><><><><><><><><><><*/ 
+footer {
+    clear: both;
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 1%;
+    margin-top: 55%;
+}
+
+#footer-logo {
+    width: 47.5%; 
+    margin: auto;
+ }
+}
+/*<><><><><><><><><><><><><>   MOBILE-END   <><<><><><><><><><><><><><><*/ 
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+ /* TABLET CSS QUERRY-STYLES <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media only screen and (min-width: 768px) {
+
+ body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+}
+/*TABLET-GLOBAL*/
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+.newsd-i, .top-img, .about-map  {
+    width: 57%;
+    float: left;
+}
+
+/*".top-info-center" is only on the Reviews H(p) index 
+& is part of the .sidebar-r-box & Molly-btn"*/
+ .sidebar-r-box, .top-info-center,
+  .feed-info p {
+    display: none;
+}
+
+
+.sidebar-newsletter-2, .sidebar-newsletter-3, .sidebar-review-2, .rs2-feed-item-1, .rs2-feed-item-2,
+ .rs2-feed-item-3, .rs2-feed-item-4, .rs2-feed-item-5, .rs2-feed-item-6,
+  .sidebar-newsletter-4r, .sidebar-newsletter-5r, .sidebar-newsletter-6r {
+    display: all;
+    display: inline-block;
+    visibility: visible;
+}
+
+/* Header =========================== */
+
+.main-header {
+        width:100%;
+        max-width:960px;
+        margin:auto;
+        margin-left: 10%;
+        
+        padding: 0 3%;
+   }
+#logo {
+        float: left;
+        width: 32%;
+}
+
+nav {
+        width: 68%;
+        float: right;
+
+  }
+
+    nav ul {
+        display: inline;
+        margin: 0;
+        margin-top: 0%
+        padding-top: 15%;
+        padding-left: 3%;
+    }
+    
+      nav ul li {
+        border:none;
+        display: inline;
+        padding:0 1%;
+        line-height: 6;
+        position:relative; 
+        top:16px;
+}
+/*TABLET-HOME PAGE AND REVIEWS PAGE ============================================ */
+
+/*this for the img under the 1st/top logo */
+.hero-area img {
+   
+    float: left;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 8%;
+    padding-right: 0%;
+    width: 100%;
+
+}
+
+
+/*TABLET-HOME Pg: TOP SECTION ========================================*/
+.top-info {
+    margin-left: 7%;
+}
+/*"Wilco Announces..."*/
+.top-info h1 {
+    clear: both;
+    float: right;
+    padding-left: 5%; 
+    margin: 0%;
+    margin-top: -50%;
+    margin-right: -11%;
+    margin-left: 0%;
+    width: 40%;
+}
+
+/* Home Landing Pg: summary under "Wilco Accounces..."*/
+.hp-sum p {
+    clear: both;
+    display: inline-block;  
+    padding-right: 2%;
+    padding-top: 3%;
+    margin-top: -33%;
+    margin-right: -20%;
+    float: right;
+    width: 45%;
+}
+
+.top-info h2 {
+   
+    color: #000;
+    float: right;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    margin: 0%;
+    margin-top: 4%;
+    margin-left:  0%;
+    margin-right:  -13%;
+    margin-bottom: 0%;
+    width: 39%;
+
+}
+
+.top-info h3 {
+    
+    color: #000;
+    padding-top: 15%;
+    padding-left: 0%;
+    padding-right: -9%;
+}
+
+.top-info p {
+
+    width: 45%;
+}
+
+/*TABLET-HOME-PG/NEWS & FEED SECTON ======================================== */
+.feed {
+    
+    clear: both; 
+    display: inline-block;  
+   
+    margin-top: -93.55%;
+    margin-left: 12.67%;
+}
+
+.feed-item {
+    border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    clear: both;
+    margin-top: -2.22%;
+    margin-bottom: 0%;
+    padding-top: 27%;
+    padding-bottom:  5%;
+    width: 63.76%;
+
+}
+
+
+ .feed-item:nth-child(7){
+            border-bottom: none;
+}
+
+
+/*MOBILE-*/
+.feed h2 {
+    color: #000;
+    margin-top: -39%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-right: 0.5%;
+    padding-right: 55%;
+    padding-top: 0;
+    padding-bottom: 3%;
+}
+
+/*controls feed-item "News" above feed img(s)*/
+.feed-item h5 {
+    color: #000;
+    margin-top:  0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: -30%;
+    margin-bottom: 0%;    
+ }
+
+/*TABLET-this is for the  img's BORDERS */
+.feed-img {
+    height: auto;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 12%;
+    padding-bottom: 0.5%;
+    width: 34%; 
+}
+
+/*for anchor right of Home(p) imgs (news & reviews)*/
+.feed h4 {
+    float: right;
+    padding-right: 38%;
+    padding-top: 0%;
+    padding-left: 9%;
+    padding-bottom: 0%;
+    margin: -31%;   
+    margin-top: -27%;
+    width: 51%;
+}
+
+/*TABLET- Second Feed Section on Reviews-H Pg */
+
+/*Main Control */
+.sidebar-review-2 {
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 85%;
+}
+.rs2-feed-item-1 h2 a {
+    color: none;
+    text-decoration: none;
+}
+
+.rs2-feed-item-1 h4 a, .rs2-feed-item-2 h4 a, .rs2-feed-item-3 h4 a,
+.rs2-feed-item-4 h4 a, .rs2-feed-item-5 h4 a, 
+.rs2-feed-item-6 h4 a {
+     color: #000;
+     text-decoration: none;
+}
+
+.rs2-feed-item-1 h5 a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+.rs2-feed-item-1 h4 a:hover, .rs2-feed-item-2 h4 a:hover,
+.rs2-feed-item-3 h4 a:hover,.rs2-feed-item-4 h4 a:hover, .rs2-feed-item-5 h4 a:hover,
+.rs2-feed-item-6 h4 a:hover {
+     color: #23a4cc;
+}
+
+.rs2-feed-item-1 h5 a:hover {
+      color: #23a4cc;
+}
+
+.rs2-feed-item-1, .rs2-feed-item-2, .rs2-feed-item-3,
+.rs2-feed-item-4, .rs2-feed-item-5 {
+    
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    clear: both;
+    margin-top: 0%;
+    margin-left: 3%;
+    margin-bottom: 0%;
+    padding-top: 2%;
+    padding-bottom:  0%;
+    width: 67%;
+
+}
+
+.rs2-feed-item-6 {
+    border-right: 1px solid gray;
+    clear: both;
+    margin-top: 0%;
+    margin-left: 3%;
+    margin-bottom: 20%;
+    padding-top: 2%;
+    padding-bottom:  0%;
+     width: 67%;
+}
+
+/*TABLET-Anchor right of Feed Images*/
+.rs2-feed-info-1 h4,.rs2-feed-info-2 h4, .rs2-feed-info-3 h4, 
+.rs2-feed-info-4 h4, .rs2-feed-info-5 h4, .rs2-feed-info-6 h4 {
+    float: right;
+    padding-right: 40%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    margin: -31%;   
+    margin-top: -28%;
+    width: 51%;
+}
+
+
+/* Home Landing (p): Reviews & News-SIDE BAR  === */
+
+
+.sidebar {
+    width: 37%;
+    float: right;
+
+}
+
+/*=========Partialy on Concerts (p): box for img-june 15============================*/
+.sidebar-reviews-panel img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+.sidebar img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+
+/*TABLET-"Newletter Signup">> on Home Pg >> (homeLANDING) <<(p)*/
+.sidebar-newsletter {
+  
+    clear: both;
+    color: #000;
+    border-top: 1px solid gray;
+    padding-left: 9%;
+    padding-bottom: 5%;
+    margin-top: 2.22%;
+    margin-left: 0%;
+    margin-right: -24%;
+    float: right;
+    display: inline-block;
+    width: 100%; 
+}
+
+/*White text box*/
+.sidebar-newsletter input[type="text"] {
+    margin: 0px;
+    margin-left: 0.3%;
+    padding: 7px;
+    padding-bottom: 6%;
+   
+}
+/*Hot Pink "SIGN UP" Box*/
+.sidebar-newsletter  input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-newsletter  a {
+    text-decoration: none;
+}
+
+
+/*TABLET-"Upcoming Concerts"*/
+.sidebar-newsletter-2 {
+    color: #000;
+    display: all;
+    display: inline-block;
+    border-top: 1px  solid gray;
+    float: right;
+    padding-top: 0%;
+    padding-left: 3.67%;
+    padding-right: -9%;
+    padding-bottom:  3%;
+    margin-top: 20%;
+    margin-right:  -44%;
+    margin-bottom: -45%;
+    width: 35%;    
+}
+
+.sidebar-newsletter-2 p {
+    color: #000;
+}
+
+.sidebar-newsletter-2  a {
+    display: all;
+    display: inline-block; 
+    color: #fff;
+    margin-top: 5%;
+    margin-left: 0%;
+    margin-right: 2%;
+    padding-top: -3%;
+    padding-left: 27%;
+    padding-right: 22%;
+    padding-bottom: 3%; 
+    width: 55%;
+}
+
+/*TABLET-"Frequently Asked Questions"*/
+.sidebar-newsletter-3 {
+    color: #000;
+    border-bottom: 1px solid gray;
+    float: right;
+    padding-top:   9%;
+    padding-left: 3.67%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    margin-top: 45%;
+    margin-right:  -44%;
+    margin-bottom: 0%;
+    width: 35%;    
+}
+/*TABLET-*/
+.sidebar-newsletter-3 a {
+  
+   
+    color: #fff;
+    clear: both;
+    margin-top: 3%;
+    margin-left:   0%;
+    margin-right:  0%;
+    margin-bottom: 9%;
+    padding-top: -3%;
+    padding-left: 27%;
+    padding-right: 22%;
+    padding-bottom: 3%;    
+    width: 55%;
+}
+
+/*Tablet vs */
+.sidebar-reviews-panel {
+    display: inline-block;
+    float: right;
+    width: 37%;
+
+}
+
+/*Tablet vs: Reiews Home Pg "Newsletter Signup" */
+.sidebar-newsletter-4r {
+  
+    clear: both;
+    color: #000;
+    border-bottom: 1px  solid gray;
+    padding-left: 6%;
+    padding-bottom: 8%;
+    margin-top: -562%;
+    margin-left: 0%;
+    margin-right: -25%;
+    float: right;
+    display: inline-block;
+    width:  100%;
+}
+
+/*White text box*/
+.sidebar-newsletter-4r input[type="text"] {
+    margin: 5px;
+    margin-left: 0.33%;
+    padding: 5px 0;
+    width: 95%;
+}
+
+/*Hot Pink "SIGN UP" Box*/
+.sidebar-newsletter-4r  input {
+    box-sizing: border-box;
+    margin-left: 0%;
+    width: 95%;
+
+}
+
+
+.sidebar-newsletter-4r  a {
+    text-decoration: none;
+}
+
+/*Tablet vs: Reviews Home Pg "Upcoming Concerts" */
+.sidebar-newsletter-5r {
+    color: #000;
+    display: inline-block;
+    float: right;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: -9%;
+    padding-bottom:  0%;
+    margin-top: -180%;
+    margin-right:  -15%;
+    margin-bottom: 0%;
+    width: 40%;   
+}
+
+.sidebar-newsletter-5r h3 {
+    margin-left: -7%;
+}
+
+.sidebar-newsletter-5r p {
+    color: #000;
+    margin-right: -27%;
+    margin-bottom: 0%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    width: 84%;
+}
+
+
+.sidebar-newsletter-5r .btn {
+    background-color: #b21e49;
+    box-shadow: 2px 2px 0px #DADADA;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1em; 
+    height: 2.2em;
+    line-height: 2.8;
+    margin-top: 8%;
+    margin-left: -9%;
+    padding-bottom: 2%;
+    text-align: center
+    text-transform: uppercase;
+    width: 86%;
+   
+}
+
+.sidebar-newsletter-5r  a {
+    display: all;
+    display: inline-block; 
+    color: #fff;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-bottom: 0%; 
+   
+}
+
+/*Tablet vs: Reiews Home Pg "Frequently Asked Questions" */
+.sidebar-newsletter-6r {
+    color: #000;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    float: right;
+    padding-top:   2%;
+    padding-left: 2%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    margin-top: -140%;
+    margin-right: -12%;
+    margin-bottom: 0%;
+    width: 40%;
+}
+
+.sidebar-newsletter-6r h3 {
+    color: #000;
+}
+
+.sidebar-newsletter-6r p {
+    padding-top: 5%;
+    padding-bottom: 8%;
+    margin-right: -40%;
+    width: 90%;
+}
+
+.sidebar-newsletter-6r .btn {
+    background-color: #b21e49;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.60em;
+    width: 0 auto;   
+}
+
+.sidebar-newsletter-6r a {
+    display: inline-block; 
+    color: #fff;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-bottom: 7%;
+    padding-top: 0%;
+    padding-bottom: 0%; 
+    width: 85%;
+}
+
+
+/*CONCERTS Pg =================================================================== */
+.sidebar-upcoming-concerts {
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+    padding-bottom: 27%;
+}
+
+/*><><>><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><><><*/
+
+/*TABLET-SIDE BAR>> Left Side <<:Concert Tickes; ============================================================= */
+.sidebar-c1 {
+    color: #000;
+    float: left;
+    margin-top: -2%;
+    margin-left: 13%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%; 
+    width: 45%;   
+}
+
+.sidebar-c1 a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+/*TABLET-box for img-june 15*/
+.sidebar img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+/*TABLET-"Concert Tickets" 
+starting on Top-Left-Side (sl)=== */
+.sl-1tk {
+    border-bottom: 1px solid gray; 
+    margin-top: 1%;
+    margin-bottom: 9%;
+    padding-top: .33%;
+    padding-bottom: 15%;
+    
+}
+
+.sl-2tk,.sl-3tk,.sl-4tk {
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+}
+.sl-5tk {
+    border-bottom: none;
+    margin-bottom: 200%;
+}
+/*TABLET-Concerts (p): "Upcoming Concerts" on top-left corner*/
+.sl-1tk h3 {
+    color: #000;
+}
+.sl-1tk h4, .sl-2tk h4,.sl-3tk h4,
+.sl-4tk h4,.sl-5tk h4 {
+    color: #000;
+    margin-left: 27%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+
+.sl-1tk p, .sl-2tk p,.sl-3tk p,
+.sl-4tk p,.sl-5tk p {
+    margin-right: -10%;
+}
+.sl-1tk  a, .sl-2tk a,.sl-3tk a,
+.sl-4tk a,.sl-5tk a {
+    color: #fff;
+    margin-top: 20%;
+    margin-bottom: -11%;
+    text-decoration: none;
+}
+/*TABLET-SIDE BAR>> Right Side <<:Concert Tickes; ============================================================= */
+.sidebar-c2 {
+    color: #000;
+    float: right;
+    margin-top: 8.45%;
+    margin-left: 0%;
+    margin-right: -12%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 8%;    
+    width: 45%;
+}
+.sidebar-c2 a {
+
+    margin-top: 20%;
+    margin-bottom: -12%;
+    text-decoration: none;
+}
+
+/*TABLET-boxes for img-june 15*/
+.sidebar-c2 img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+/*TABLET-"Concert Tickets" 
+starting on Right-Side (sl)=== */
+.sr-1tk, .sr-2tk,.sr-3tk,.sr-4tk {
+    border-bottom: 1px solid gray;   
+    margin-top: 10%;
+    margin-bottom: 12.33%;
+    padding-top: 3%;
+    padding-bottom: 15%;
+
+}
+
+/*seperated sr-5tk box to remove the border-bottom without using an: ":nth-child()" child remover*/ 
+.sr-5tk {
+    padding-top: 3%;
+    padding-bottom: 15%;
+    margin-bottom: 200%;
+}
+
+/*Concerts (p): "Upcoming Concerts" on Right Side*/
+.sl-1tk h3 {
+    color: #000;
+}
+.sr-1tk h4, .sr-2tk h4,.sr-3tk h4,
+.sr-4tk h4,.sr-5tk h4 {
+    color: #000;
+    margin-left: 27%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+/*the "em" being usedd to match the "p" font-sizes here "sidebar right (sr)"
+ to those of sidebar left (sl) which is above*/
+.sr-1tk p, .sr-2tk p,.sr-3tk p,
+.sr-4tk p,.sr-5tk p {
+    font-size: 0.80em;
+    margin-top: -10%;
+    margin-left: 27%;
+    color: #000;
+}
+.sr-1tk  a, .sr-2tk a,.sr-3tk a,
+.sr-4tk a,.sr-5tk a {
+    color: #fff;
+    margin-top: -3%;
+    margin-bottom: -11%;
+    text-decoration: none;
+}
+
+.sidebar-c1 p  {
+    padding-right: 50%;
+    padding-bottom: 0%;
+    margin-top: -9%;
+    margin-bottom: -2%;
+    float: right;
+    font-size: 13px;
+    color: #000;
+}
+
+/*this is the Recent News & Reviews h2 ==========================================*/
+.sidebar-upcoming-concerts  h2 {
+    padding-bottom: 3%;
+}
+
+.sidebar-upcoming-concerts  h4 {
+   
+   
+    margin-top: -3%;
+    float: right;
+    padding-right: 49%;
+} 
+
+/*TABLET-<><<><><><>><><>   REVIEWS HOME-PG <><>><>><><>*/
+.reviews-img {
+    width: 55%;
+}
+.review {
+    visibility: hidden;
+}
+.review h3 {
+    visibility: hidden;
+}
+
+/*Reviews Home (p): Use for control  width of tag lines next to imgs
+ex."Mumford & Sons..."*/
+.review-info h4 {
+    visibility: hidden;
+}
+
+.review-item h4 a {
+     visibility: hidden;
+}
+
+.review-item h4 a:hover {
+    visibility: hidden;
+}
+/*TABLET-Home (p): NECESSARY to remove underline of text 
+on top left Feed imgs "NEWS" & "Reviews"*/
+.review-item h5  {
+    
+    visibility: hidden;
+}
+
+.review h4 {
+    visibility: hidden;
+}
+
+.review p {
+   visibility: hidden;
+}
+
+.review-item {
+    visibility: hidden;
+}
+
+.review-item:nth-child(9){
+           visibility: hidden;
+        }
+
+.review-info {
+    visibility: hidden;
+}
+/*used backgroud or frame effect since borders were less couperative here v. H-pg */
+.review-img {
+   visibility: hidden;
+}
+
+
+.review {
+    visibility: hidden;
+    display: none;
+}
+
+.review h3 {
+    visibility: hidden;
+     display: none;
+}
+
+.review h4 {
+   visibility: hidden;
+    display: none;
+}
+/*TABLET-Reviews H & D (p): "Beirut's New Album..."
+NOTE: use this to keep <h2> & <p> inline*/
+.top-info-review h1 {
+    color: #000;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 103%;
+
+}
+
+/*Reviews H & D (p): SUMMARY Under >> "Beirut's New Album..."*/
+.top-info-review p {
+    color: #000;
+    margin-top: -5%;
+}
+
+.review p {
+    visibility: hidden;
+}
+
+.review-item {
+  visibility: hidden;
+}
+
+.review-info {
+    visibility: hidden;
+}
+            /*used backgroud or frame effect since borders were less couperative here v. H-pg */
+.review-img {
+    visibility: hidden;
+}
+
+/*TABLET-<><><><><><><   ABOUT SECTION   <><><><><><><><><><><><><><><>*/
+/*TABLET-<><><><><><><><><><><><><><>   ABOUT SECTION*/
+
+/*"Contact Us"*/
+.about-top-info h1 {
+    font-size: 1.4em;
+    margin-left: 12%;
+    padding-top: 5%;
+}
+/*"Email, Telephone, Address"*/
+.about-top-info h4 {
+    margin-left: 12%;
+}
+/*"Email, Telephone, Address--INFORMATION"*/
+.about-top-info h5 {
+    margin: -10%;
+    margin-top: -5%;
+    margin-left: 0%;
+    margin-right: 60%;
+    float: right;
+    color: #000;
+}
+/*TABLET-*/
+/*GOOGLE MAP*/
+.map-container iframe {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    height: auto;
+    padding-bottom: 0%;
+    margin-top: -25%;
+    margin-right: -8%;
+    width: 60%;
+}
+
+/*MAP-BEFORE ifram installed
+#about-top-info-img-map {
+         background-image: url("../img/map.png");
+}*/
+
+.mission h1 {
+    font-size: 1.4em;
+    margin-left: 0%;
+}
+
+.team h1 {
+    font-size: 1.4em;
+
+}
+/*TABLET-*/
+.mission {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 0;
+        padding-left: 12%;
+        margin-top: 20%;
+        width: 103%;
+}
+.team {
+        padding-top: 15px;
+        margin-left: 12%;
+}
+/*TABLET-*/
+.team-member {
+        padding: 15px 0;
+}
+/*TABLET-*/
+.team-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 20px;
+        padding-bottom: 40%;
+        width: 40%;
+}
+
+.team-name {
+
+}
+.team-title {
+    margin-top: -2%;
+}
+.team-description {
+}
+
+#team-img-jack {
+        background-image: url("../img/guy.png");
+}
+
+#team-img-lana {
+        background: url('../img/girl-1.png');
+}
+
+#team-img-willow {
+        background: url('../img/girl-0.png');
+}
+
+#team-img-jack,
+#team-img-lana,
+#team-img-willow{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.about h3 {
+    float: right;
+    padding-right: 55%;  
+    margin-top: -18%;
+    margin-right: 9%;
+    margin-bottom: -3%;
+    padding-top: -9%;
+    padding-bottom: -9%;
+}
+
+.about h4 {
+    float: right;
+    padding-right: 60%;
+    padding-left: 9%;
+    margin: -35%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: -39%;
+    margin-bottom: -8%;
+    height: -60%;
+}
+
+.about p {
+    width: 53%;
+    float: right;
+    margin-top: -30%;
+    padding-top: 0%; 
+    padding-left: 34%;
+    padding-right: -9%;
+    padding-bottom: -30%;
+    margin-top: -30%;
+    color: #000;
+}
+
+
+
+/*TABLET-ABOUT TOP--CONTACT US SECTION--to CONTROL H3s & H4s USE .ABOUT-BELLOW!! =============================*/
+.top-info h5 {
+    color: #000;
+    float: right;
+    padding-top: 0%; 
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 67%;
+    margin-top: -33%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+/* About Body <p>, & runs inlne with the add class below
+ too solve alignment issues with Top&Bottom Sections of the pgs below*/
+.top-info p {
+    color: #000;
+    padding-top: 2%;
+    padding-left: 0%;
+    padding-right: 18%;
+    padding-bottom: 0%;
+    margin: 0%;
+    margin-top: 0%;
+    margin-left: -5%;
+    margin-right: 0;
+    width: 100%;
+
+}
+/*runs on H-detail, R-detail, & --FAQ--<p>; NOTE currently Mobille is fine with this!*/
+
+/*TABLET-"Frequently Asked Questions"*/
+.top-info-faq h1 {
+    color: #000;
+    font-size: 1.4em;
+    margin-bottom: -3%;
+    margin-left: 12%;
+    padding-top: 5%;
+}
+.top-info-faq p {
+    color: #000;
+    padding-top: 6%;
+    padding-right: 18%;
+    margin-left: 12%;
+    margin-right: -6%;
+    width: 100%;
+
+
+}
+/*TABLET-ABOUT BOTTOM--TEAM SECTION--this is for the ABOUTT-img's BORDERS======================================*/
+.about-img {
+    float: left;
+
+    width: 20%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0.5%;   
+    padding-left: 0.5%;
+    padding-right: 10%;
+    padding-bottom: 0.5%;
+    height: auto;
+}
+
+.about h3 {
+    float: right;
+    padding-right: 55%;  
+    margin-top: -18%;
+    margin-right: 9%;
+    margin-bottom: -3%;
+    padding-top: -9%;
+    padding-bottom: -9%;
+}
+
+.about h4 {
+    float: right;
+    padding-right: 60%;
+    padding-left: 9%;
+    margin: -35%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: -39%;
+    margin-bottom: -8%;
+    height: -60%;
+}
+
+.about p {
+    width: 53%;
+    float: right;
+    margin-top: -30%;
+    padding-top: 0%; 
+    padding-left: 34%;
+    padding-right: -9%;
+    padding-bottom: -30%;
+    margin-top: -30%;
+    color: #000;
+}
+
+/*TABLET-DETAILED PAGES ======================================================== */
+.news-img {
+    width: 100%;
+}
+
+/*<><>><>><><><><><><><><>   News Detail Pg    <><><><><>*/
+
+/*News Detail Pg --IMAGE-- */
+.newsd-i {
+    float: left;
+    margin-left: -6.66%;
+    padding-right: 0%;
+    margin-bottom: -51%;
+    width: 43%;
+}
+/*News Detail Pg >>ONLY<<:"Wilco Announces"*/
+.top-info-newsd h1 {
+    color: #000;
+    padding-top: 11%;
+    padding-left: 8%;
+    margin-left: 36%;
+    margin-right: 0%;
+    width: 45%;
+}
+
+/*TABLET-News Detail Pg: SUMMARY <p> UNDER "Wilco Announces"*/
+.top-info-newsd p {
+    color: #000;
+    padding-bottom: 11%;
+    margin-left: 45%;
+    width: 50%;
+}
+
+
+/*<><><><><><><>    News Detail Pg     <>><><><><><>
+: BODY <P> UNDER "Wilco Announces"*/
+.top-info-newsd-body p {
+    
+    margin-top: -13%;
+    margin-left: -2%;
+    margin-bottom: -9%;
+    padding-top: 8%;
+    padding-bottom: 12%;
+    
+}
+
+/*TABLET-"Newsletter Signup" on >> (homeNEWS-DETAIL) <<(p)*/
+
+.sidebar-newsletter-home-d {
+   clear: both;
+   border-top: 1px solid gray;
+   border-bottom: 1px solid gray;
+   margin-top: 20%;
+   margin-bottom: 9%;
+   margin-left: -176%;
+   padding-top: 0%;
+   padding-bottom: 30%;
+   width: 330%;
+}
+
+/* White Text-Input Box--> top&bottom newsletter BOXES+*/
+.sidebar-newsletter-home-d  input[type="text"] {
+    clear: both;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    padding-top: .89%;
+    padding-right: 0%;
+    padding-bottom:  1.3%;
+    width: 60%;
+}
+
+/*Hot Pink Anchor "SIGN UP" Text-Input Box--> top&bottom newsletter BOXES+*/
+.sidebar-newsletter-home-d  input {
+    clear: both;
+    box-sizing: border-box;
+    margin-top: -5%;
+    margin-right: 8%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    float: right;
+    width: 30%;
+}
+
+/*TABLET-<><><><><><><><   Reviews Detail Pg   <><><><><*/
+/*Main Image*/ 
+.reviewsd-i {
+    margin-left: 7%;
+    width: 40%;
+}
+/*"Beirut's New Album..."*/
+.top-info-reviewsd h1 {
+    padding-top: 1%;
+    width: 90%;
+}
+/*TABLET-Reviews DETAIL: Top-Section-Body <p> UNDER "Beirut's New Album..."*/
+.top-info-reviewsd-body p {
+    margin-left: 11%;
+}
+/*Last-Section-Body <p> UNDER "Beirut's New Album..."*/
+.top-info-reviewsd-body-last p {
+    margin-left: 11%;
+}
+
+/*TABLET-Reviews-DETAIL pg: "Newsletter Signup"*/
+.sidebar-newsletter-review-d {
+   clear: both;
+   border-top: 1px solid gray;
+   border-bottom: 1px solid gray;
+   margin-top: 20%;
+   margin-bottom: 9%;
+   margin-left: -140%;
+   padding-top: 0%;
+   padding-bottom: 30%;
+   width: 260%;
+}
+
+/* White Text-Input Box--> top&bottom newsletter BOXES+*/
+.sidebar-newsletter-review-d  input[type="text"] {
+    clear: both;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    padding-top: .89%;
+    padding-right: 0%;
+    padding-bottom:  1.3%;
+    width: 60%;
+}
+
+/*Hot Pink Anchor "SIGN UP" Text-Input Box--> top&bottom newsletter BOXES+*/
+.sidebar-newsletter-review-d  input {
+    clear: both;
+    box-sizing: border-box;
+    margin-top: -5%;
+    margin-right: 8%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    float: right;
+    width: 30%;
+}
+
+
+
+/*TABLET-FOOTER =================================================================*/
+
+footer {
+    clear: both;
+    border-top: 0.18em solid gray;
+    display: inline-block;
+    margin: 0 auto
+    padding-top:  5%;
+    padding-right: 18%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+#footer-logo {
+    background-color: #000;
+    margin: 0 auto;
+    width:  30%;
+   
+  }
+
+}
+
+   
+/*TABLET-END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* DESKTOP CSS QUERRY-STYLES  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media only screen and (min-width: 940px) {
+    
+/*DESKTOP-GLOBAL*/
+body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    color: #222;
+    background-color: #eee;
+}
+
+
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.4em;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+
+
+ 
+   
+
+
+/*DESKTOP-GLOBAL*/
+.newsd-i, .top-img, .about-map  {
+    width: 57%;
+    float: left;
+}
+/*DESKTOP-*/
+/*".top-info-center" is only on the Reviews H(p) index 
+& is part of the .sidebar-r-box & Molly-btn"
+ADDITIONALLY, .feed-info p visiable & display all = showing*/
+ .sidebar-r-box, .top-info-center,  .rs2-feed-item-1, .rs2-feed-item-2,
+  .rs2-feed-item-3, .rs2-feed-item-4, .rs2-feed-item-5, .rs2-feed-item-6, .rs2-feed-item-1 h3, .rs2-feed-item-2 h3,
+   .rs2-feed-item-3 h3, .rs2-feed-item-4 h3, .rs2-feed-item-5 h3, .rs2-feed-item-6 h3,.rs2-feed-item-1 h5, .rs2-feed-item-2 h5,
+    .rs2-feed-item-3 h5, .rs2-feed-item-4 h5, .rs2-feed-item-5 h5, .rs2-feed-item-6 h5, .rs2-feed-item-1 p, .rs2-feed-item-2 p,
+     .rs2-feed-item-3 p, .rs2-feed-item-4 p, .rs2-feed-item-5 p, .rs2-feed-item-6 p,
+      .sidebar-newsletter-4r,.sidebar-newsletter-5r, .sidebar-newsletter-6r, .sidebar-reviews-panel  {
+    display: none;
+}
+/*DESKTOP-*/
+.sidebar-newsletter-2, .sidebar-newsletter-3, .review,.review h3, .review p, .feed-info p,
+ .review-item, .review-item h4, .review-info h4, .review-info, .sidebar-concerts-newsletter, .sidebar-c1, .sl-1tk p, .sl-2tk p, .sl-3tk p, .sl-4tk p, .sl-5tk p,
+  .desktop-newslettersx3, .sidebar-desktop-reviews-panel, .sidebar-desktop-newsletter-7r, .sidebar-desktop-newsletter-8r, .sidebar-desktop-newsletter-9r,
+   .sidebar-desktop-newsletter-7r h3, .sidebar-desktop-newsletter-8r h3, .sidebar-desktop-newsletter-9r h3, 
+    .sidebar-desktop-newsletter-8r p, .sidebar-desktop-newsletter-9r p {
+
+    display: all;
+    display: inline-block;
+    visibility: visible;
+}
+
+/* Header =========================== */
+/*DESKTOP-*/
+.main-header {
+        width:100%;
+        max-width:960px;
+        margin:auto;
+        margin-left: 10%;
+        
+        padding: 0 3%;
+   }
+#logo {
+        float: left;
+        width: 45%;
+}
+/*DESKTOP-NAV*/
+nav {
+        float: right;
+        margin-right: -45%;
+        padding-top: 3.3%;
+        padding-bottom: 3.3%;
+        width: 100%;
+
+  }
+
+    nav ul {
+        display: inline;
+
+        margin: 0;
+        margin-top: 0%
+        margin-right: 0%;
+        padding-top: 15%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    
+      nav ul li {
+        border:none;
+        display: inline;
+        line-height: 6;
+
+        padding:0 1%;
+        padding-left: 11%;
+        position:relative; 
+        top:16px;
+}
+/*DESKTOP-HOME PAGE AND REVIEWS PAGE ============================================ */
+
+/*Home Pg: Image*/
+.hero-area img {  
+    clear: both;
+    float: left;
+    margin-top: 3%;
+    margin-left: -34%;
+    margin-bottom: 8%;
+    padding-right: 3%;
+    width: 164%;
+
+}
+
+
+/*DESKTOP-HOME Pg: TOP SECTION ========================================*/
+.top-info {
+    margin-left: 7%;
+}
+/*"Wilco Announces..."*/
+.top-info h1 {
+    clear: both;
+    color: #000;
+    float: left;
+    font-size: 2.67em;
+    padding-bottom: 5%;
+    margin-top: -5%;
+    margin-left:  -28%;
+    width: 90%;
+}
+
+
+/* Home Landing Pg: summary under "Wilco Accounces..."*/
+.hp-sum p {
+    clear: both;
+    display: inline-block;  
+    float: left; 
+    font-size: 1.4em;
+    padding-right: 2%;
+    padding-top: 3%;
+    margin-top: -6%;
+    margin-left: -14%;
+    margin-bottom: 163%;
+    width: 88%;
+}
+
+
+.top-info h3 {
+    
+    color: #000;
+    padding-top: 15%;
+    padding-left: 0%;
+    padding-right: -9%;
+}
+
+.top-info p {
+
+    width: 45%;
+}
+
+
+/*DESKTOP-"Newletter Signup">> on Home Pg >> (homeLANDING) <<(p)*/
+.sidebar-newsletter {
+    border-top: none;
+    border-left: 1px solid gray;
+    clear: all;
+    clear: both;
+    color: #000;
+    float: right;
+    font-size: 2em;
+    padding-top: -2%;
+    padding-left: 4%;
+    padding-bottom: 15%;
+    margin-top: -111%;
+    margin-left: 0%;
+    margin-right: 12%;   
+    margin-bottom: 0%;
+    width: 67%; 
+}
+
+.sidebar-newsletter h3 {
+    border-left: 1px solid gray;
+    clear: both;
+    margin-top: -6%;
+    margin-left: -6.33%;
+    margin-bottom: 6%;
+    padding-left: 8%;
+    padding-top: 0%;
+
+}
+/*White Text Box*/
+.sidebar-newsletter  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: -6%;
+    padding-top: 0%;
+    padding-bottom: 2%;
+    width: 95%;
+
+}
+
+/*Hot Pink Box*/
+.sidebar-newsletter  input {
+    margin-top: 0%;
+    margin-right: 0;
+    margin-bottom: -10%;
+    padding-top: 0%;
+    padding-bottom: -3%;
+    display: block;
+    width: 100%;
+}
+
+.sidebar-newsletter .btn {
+    clear: both;
+    width: 95%;
+
+}
+.sidebar-newsletter  a {
+    clear: both;
+    text-decoration: none;
+
+}
+
+
+/*DESKTOP-"Upcoming Concerts"*/
+.sidebar-newsletter-2 {
+    border-top: 1px  solid gray;
+    border-left: 1px solid gray;
+    border-bottom: none;
+    color: #000;
+    display: all;
+    display: inline-block;
+    float: right;
+    padding-top: 0%;
+    padding-left: 1.76%;
+    padding-right: -9%;
+    padding-bottom:  1.2%;
+    margin-top: -33%;
+    margin-right:  -32%;
+    margin-bottom: 0%;
+    width: 24%; 
+}
+
+
+.sidebar-newsletter-2 h3 {
+    font-size: 2em;
+    margin-top: 3%;
+    margin-bottom: -2%;
+
+}
+
+.sidebar-newsletter-2 p {
+    color: #000;
+    font-size: 1.4em;
+}
+
+.sidebar-newsletter-2  a {
+    display: all;
+    display: inline-block; 
+    color: #fff;
+    font-size: 1em;
+    margin-top: -2%;
+    margin-left: 0%;
+    margin-right: 2%;
+    padding-top: 2%;
+    padding-left: 27%;
+    padding-right: 22%;
+    padding-bottom: 2%; 
+    width: 48%;
+}
+
+/*DESKTOP-"Frequently Asked Questions"*/
+.sidebar-newsletter-3 {
+    color: #000;
+    border-top: 1px solid gray;
+    border-bottom: none;
+    border-left: 1px solid gray;
+    float: right;
+    padding-top:   0%;
+    padding-left: 1.76%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+    margin-top: -15.76%;
+    margin-right:  -33%;
+    margin-bottom: 0%;
+    width: 25%;
+}
+/*DESKTOP-*/
+.sidebar-newsletter-3 h3 {
+    font-size: 2em;
+    margin-top: 3%;
+}
+
+.sidebar-newsletter-3 p { 
+    font-size: 1.4em;
+    margin-top: -4%;
+    width: 111%;
+}
+
+.sidebar-newsletter-3 a {
+    color: #fff;
+    clear: both;
+    font-size: 1.4em;
+    margin-top: -7%;
+    margin-left:   0%;
+    margin-right:  0%;
+    margin-bottom: 9%;
+    padding-top: 2%;
+    padding-left: 27%;
+    padding-right: 22%;
+    padding-bottom: 0%;    
+    width: 45%;
+}
+
+
+/*DESKTOP-HOME-PG/NEWS & FEED SECTON ======================================== */
+.feed {
+    clear: all;
+    clear: both; 
+    display: inline-block;  
+    font-size: 1.4em
+    margin-left: 13%;
+    width: 130%;
+}
+
+.feed-item {
+    border-top: 1px solid gray;
+    border-right: none;
+    clear: both;
+    margin-top: 2.22%;
+    margin-bottom: -6%;
+    padding-top: 24%;
+    padding-bottom:  0%;
+    width: 63.76%;
+
+}
+
+
+ .feed-item:nth-child(7){
+            border-bottom: none;
+}
+
+
+/*"Recent News & Reviews" on top of News*/
+.feed h2 {
+    color: #000;
+    font-size: 1.4em;
+    margin-top: -36%;
+    margin-left: 0%;
+    margin-bottom: 0%;
+    margin-right: 0.5%;
+    padding-right: 81%;
+    padding-top: 0;
+    padding-bottom: 0%;
+}
+
+/*for anchor right of Home(p) imgs (news & reviews)*/
+.feed h4 {
+    clear: both;
+    display: inline-block;
+    font-size: 1.4em;
+    float: right;
+    padding-right: 0%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    margin-top: -19%;
+    margin-right: 12%;
+    width: 50%;
+}
+
+.feed-info h4 a {
+    color: #000;
+    display: inline-block;
+    font-size: 1.4em;
+    margin-left: -18%;
+
+}
+
+.feed-info p {
+    float: right;
+    font-size: 1.4em;
+    margin-top: -12%;
+    margin-left: 0%;
+    margin-right: -2%;
+    width: 73%;
+}
+
+
+/*controls feed-item "NEWS" above feed img(s)*/
+.feed-item h5 {
+    color: #000;
+    font-size: 1.4em;
+    margin-top:  0%;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin-top: -33%;
+    margin-bottom: 0%;    
+ }
+
+/*DESKTOP-this is for the  img's BORDERS */
+.feed-img {
+    height: auto;
+    margin-top: 0%;
+    margin-left: -1%;
+    margin-right: 0%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0%;
+    padding-bottom: 0.5%;
+    width: 27%;
+}
+
+
+
+/* Home Landing (p): Reviews & News-SIDE BAR  === */
+
+
+.sidebar {
+    width: 37%;
+    float: right;
+
+}
+
+/*=========Partialy on Concerts (p): box for img-june 15============================*/
+.sidebar-reviews-panel img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+.sidebar img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+}
+
+
+
+
+/*CONCERTS Pg =================================================================== */
+.sidebar-upcoming-concerts {
+    margin-bottom: 9%;
+    border-bottom: 1px solid gray; 
+    padding-bottom: 27%;
+}
+
+/*><><>><><><>><><><><><><><><><><><><><><><><><><><><><><><><><><><><><*/
+
+/*DESKTOP-SIDE BAR>> Left Side <<:Concert Tickes; ============================================================= */
+.sidebar-c1 {
+    color: #000;
+    float: left;
+    margin-top: -2%;
+    margin-left: 2%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    padding-top: 3%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 8%; 
+    width: 45%;   
+}
+
+.sidebar-c1 a {
+
+    margin-top: 20%;
+    margin-bottom: 9%;
+    text-decoration: none;
+}
+
+
+
+/*DESKTOP-CONCERTS LEFT COLUMN "JUNE 15"*/
+.sidebar-c1 img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;   
+    width: 15%;
+
+}
+
+
+/*DESKTOP-"Concert Tickets" 
+starting on Top-Left-Side (sl)=== */
+.sl-1tk {
+    border-bottom: 1px solid gray; 
+    margin-top: 1%;
+    margin-bottom: 9%;
+    padding-top: .33%;
+    padding-bottom: 15%;
+    
+}
+
+.sl-2tk,.sl-3tk,.sl-4tk {
+    border-bottom: 1px solid gray; 
+    margin-bottom: 9%;
+    padding-top: 3%;
+    padding-bottom: 15%;
+    
+}
+.sl-5tk {
+    border-bottom: none;
+    margin-bottom: 200%;
+}
+/*DESKTOP-Concerts (p): "Upcoming Concerts" on top-left corner*/
+.sl-1tk h3 {
+    color: #000;
+    font-size: 2em;
+}
+.sl-1tk h4, .sl-2tk h4,.sl-3tk h4,
+.sl-4tk h4,.sl-5tk h4 {
+    color: #000;
+    font-size: 1.4em;
+    margin-left: 24%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+/*DESKTOP-ONLY!!!-Mobile & Tabler use this:
+.sl-1tk p, .sl-2tk p,.sl-3tk p,
+.sl-4tk p,.sl-5tk p {
+    clear: both;
+    color: red;
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-right: -4%;
+}*/
+.sidebar-c1 .sl-1tk p, .sidebar-c1 .sl-2tk p,.sidebar-c1 .sl-3tk p,
+.sidebar-c1 .sl-4tk p,.sidebar-c1 .sl-5tk p {
+    font-size: 1.4em;
+    margin-right: -13%;
+}
+
+.sl-1tk  a, .sl-2tk a,.sl-3tk a,
+.sl-4tk a,.sl-5tk a {
+    color: #fff;
+    margin-top: 20%;
+    margin-bottom: -11%;
+    text-decoration: none;
+}
+
+/*DESKTOP-SIDE BAR>> Right Side <<:Concert Tickes; ============================================================= */
+.sidebar-c2 {
+    border-right: 1px solid gray;
+    color: #000;
+    float: right;
+    margin-top: 10%;
+    margin-left: 0%;
+    margin-right: -2%;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-bottom: 8%;    
+    width: 45%;
+}
+
+
+/*DESKTOP-boxes for img-june 15*/
+.sidebar-c2 img {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: -2%;
+    padding-top: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 3%;
+    height: auto;
+    width: 15%;   
+}
+
+/*DESKTOP-"Concert Tickets" 
+starting on Right-Side (sl)=== */
+.sr-1tk, .sr-2tk,.sr-3tk,.sr-4tk {
+    border-bottom: 1px solid gray;   
+    margin-top: 10%;
+    margin-bottom: 12.33%;
+    padding-top: 2.76%;
+    padding-bottom: 15%;
+
+}
+
+/*seperated sr-5tk box to remove the border-bottom without using an: ":nth-child()" child remover*/ 
+.sr-5tk {
+    padding-top: 0%;
+    padding-bottom: 15%;
+    margin-bottom: 200%;
+}
+
+/*Concerts (p): "Upcoming Concerts" on Right Side*/
+.sl-1tk h3 {
+    color: #000;
+}
+.sr-1tk h4, .sr-2tk h4,.sr-3tk h4,
+.sr-4tk h4,.sr-5tk h4 {
+    color: #000;
+    font-size: 1.4em;
+    margin-left: 27%;
+    margin-top: -15.67%;
+    margin-bottom: 10%;
+    padding-bottom: 0%;
+}
+/*the "em" being usedd to match the "p" font-sizes here "sidebar right (sr)"
+ to those of sidebar left (sl) which is above*/
+.sr-1tk p, .sr-2tk p,.sr-3tk p,
+.sr-4tk p,.sr-5tk p {
+    font-size: 1.4em;
+    margin-top: -10%;
+    margin-left: 27%;
+    color: #000;
+}
+.sr-1tk  a, .sr-2tk a,.sr-3tk a,
+.sr-4tk a,.sr-5tk a {
+    color: #fff;
+    margin-top: -9%;
+    margin-bottom: -11%;
+    text-decoration: none;
+}
+
+.sidebar-c1 p  {
+    padding-right: 50%;
+    padding-bottom: 0%;
+    margin-top: -9%;
+    margin-bottom: -2%;
+    float: right;
+    font-size: 13px;
+    color: #000;
+}
+
+/*this is the Recent News & Reviews h2 ==========================================*/
+.sidebar-upcoming-concerts  h2 {
+    padding-bottom: 3%;
+}
+
+.sidebar-upcoming-concerts  h4 {
+   
+   
+    margin-top: -3%;
+    float: right;
+    padding-right: 49%;
+} 
+
+/*DESKTOP-ONLY-ON-DESKTOP: "Newsletter Signup"*/
+.sidebar-concerts-newsletter {
+    border-bottom: 1px solid gray;
+    float: right;
+    font-size: 1.5em;
+    margin-top: -592%;
+    margin-right: -100%;
+    padding-left: 11%;
+    padding-bottom: 3%;
+
+}
+
+.sidebar-concerts-newsletter h3 {
+    border-left:  1px solid gray; 
+    margin-left: -13.67%;
+    margin-bottom: -3%;
+    padding-left: 14%;
+    padding-bottom: 7%;
+
+}
+
+
+
+/*DESKTOP-<><<><><><>><><>   REVIEWS HOME-PG <><>><>><><>*/
+.reviews-img {
+    
+    display: all;
+    margin-left: 20%;
+    visibility: visible;
+    width: 57%;
+}
+
+.reviews-img  img {
+    border-right: 1px solid gray;
+    padding-right: 8%;
+}
+
+
+
+/*DESKTOP-Reviews-H: "Beirut's New Album..."
+NOTE: use this to keep <h2> & <p> inline*/
+.top-info-review h1 {
+    clear: both;
+    color: #000;
+    float: left;
+    font-size: 2.57em;
+    font-weight: 800;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    margin-top: -5%;
+    margin-left: 1.33%;
+    width: 95%;
+}
+
+/*Reviews DETAIL-H Pg:SUMMARY Under >> "Beirut's New Album..."*/
+.top-info-review p {
+    color: #000;
+    float: left;
+    margin-top: -2%;
+    margin-left: 1.67%;
+    padding-bottom: 3%;
+}
+
+
+.review {
+    border-top: 1px solid gray;
+    display: all;
+    visibility: visible;
+}
+/*DESKTOP-"Recent Reviews"*/
+.review h3 {
+    
+    color: #000;
+    display: all;
+     display: inline-block;
+    font-size: 1.4em;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding-top: 0%:;
+    visibility: visible;
+}
+
+
+/*Reviews Home Pg: Use for control  width of tag lines next to imgs
+ex."Mumford & Sons..."*/
+.review-info h4 {
+    clear: both;
+    color: red;
+    display: all;
+    display: inline-block;
+    margin-top: -50%;
+    margin-right: 15%;
+    visibility: visible;
+    width: 200%;
+}
+
+.review-item h4 a {
+     display: all;
+      display: inline-block;
+    visibility: visible;
+}
+
+.review-item h4 a:hover {
+    display: all;
+     display: inline-block;
+    visibility: visible;
+}
+/*DESKTOP-Home Pg: NECESSARY to remove underline of text 
+on top left Feed imgs "NEWS" & "Reviews"*/
+.review-item h5  {
+    
+   display: all;
+   font-size: 1.4em;
+   visibility: visible;
+}
+
+.review h4 {
+  display: all;
+  display: inline-block;
+  font-size: 1.4em;
+  visibility: visible;
+}
+
+.review p {
+   display: all;
+   display: inline-block;
+   font-size: 1.4em;
+   margin-top: -40%;
+   margin-right: -145%;
+   width: 250%;
+   visibility: visible;
+}
+
+.review-item {
+    border-top: 1px solid gray;
+    display: all;
+    display: inline-block;
+    margin-left: 2%;
+    padding-right: 43%;
+    width: 100%;
+    visibility: visible;
+}
+.review-item:nth-child(2){
+    border-top: none;
+}
+
+.review-item:nth-child(9){
+           display: all;
+    visibility: visible;
+        }
+
+.review-info {
+    display: all;
+    visibility: visible;
+}
+/*used backgroud or frame effect since borders were less couperative here v. H-pg */
+.review-img {
+
+ display: all;
+    visibility: visible;
+}
+
+
+/*DESKTOP-Review H-Pg: 1st-LEFT-SIDE-Column of Images*/ 
+.review-img {
+   display: all;
+   width: 27%;
+   visibility: visible;
+}
+
+
+.desktop-newslettersx3 {
+    display: all;
+    visibility: visible;
+}
+.sidebar-desktop-reviews-panel {
+    display: all;
+    visibility: visible;
+}
+/*CRITICAL - CRITICAL - CROTICAL:
+ MUST HAVE FUNCTIONAL (NOT HIDDEN) 
+.sidebar-review-2 = FOR Newsletters:
+.sidebar-desktop-newsletter-7r, 
+.sidebar-desktop-newsletter-8r,
+.sidebar-desktop-newsletter-9r
+/*DESKTOP: Reiews Home Pg "Newsletter Signup" */
+.sidebar-desktop-newsletter-7r {
+    clear: both;
+    display: all;
+    color: #000;
+    border-bottom: 1px  solid gray;
+    padding-left: 6%;
+    padding-bottom: 11%;
+    margin-top: -789%;
+    margin-left: 0%;
+    margin-right: -253%;
+    float: right;
+    display: inline-block;
+    visibility: visible;
+    width:  120%;
+}
+
+.sidebar-desktop-newsletter-7r h3 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: -2%;
+}
+
+.sidebar-desktop-newsletter-7r p {
+     font-size: 1.4em;
+}
+/*White text box*/
+.sidebar-desktop-newsletter-7r input[type="text"] {
+    margin: 5px;
+    margin-left: 0.33%;
+    padding: 5px 0;
+    width: 95%;
+}
+
+/*Hot Pink "SIGN UP" Box*/
+.sidebar-desktop-newsletter-7r  input {
+    box-sizing: border-box;
+    margin-left: 0%;
+    width: 95%;
+
+}
+
+.sidebar-desktop-newsletter-7r  a {
+    text-decoration: none;
+}
+
+/*DESKTOP-Reviews Home Pg "Upcoming Concerts" */
+.sidebar-desktop-newsletter-8r {
+    color: #000;
+    display: inline-block;
+    float: right;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: -9%;
+    padding-bottom:  0%;
+    margin-top: -339%;
+    margin-right:  -63%;
+    margin-bottom: 0%;
+    width: 51%;   
+}
+
+.sidebar-desktop-newsletter-8r h3 {
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: -7%;
+}
+
+.sidebar-desktop-newsletter-8r p {
+    color: #000;
+    font-size: 1.4em;
+
+    margin-right: -43%;
+    margin-bottom: 0%;
+    padding-top: 5%;
+    padding-bottom: 0%;
+    visibility: visible;
+    width: 100%;
+}
+
+
+.sidebar-desktop-newsletter-8r .btn {
+    background-color: #b21e49;
+    box-shadow: 2px 2px 0px #DADADA;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1em; 
+    height: 2.2em;
+    line-height: 2.8;
+    margin-top: 8%;
+    margin-left: -9%;
+    padding-bottom: 2%;
+    text-align: center
+    text-transform: uppercase;
+    width: 86%;
+   
+}
+
+.sidebar-desktop-newsletter-8r  a {
+    display: all;
+    display: inline-block; 
+    color: #fff;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-bottom: 0%;
+    padding-top: 0%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 0%; 
+    width: 100%;
+   
+}
+
+/*DESKTOP: Reiews Home Pg "Frequently Asked Questions" */
+.sidebar-desktop-newsletter-9r {
+    color: #000;
+    border-top: 1px solid gray;
+    border-left:  1px solid gray;
+    border-bottom: 1px solid gray;
+    float: right;
+    padding-top:   0%;
+    padding-left: 3.90%;
+    padding-right: 0%;
+    padding-bottom: 2%;
+    margin-top: -300.49%;
+    margin-right: -58%;
+    margin-bottom: 0%;
+    width: 49%;
+}
+
+.sidebar-desktop-newsletter-9r h3 {
+    color: #000;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.sidebar-desktop-newsletter-9r p {
+    padding-top: 5%;
+    padding-bottom: 8%;
+    font-size: 1.4em;
+    margin-right: -60%;
+    width: 110%;
+}
+
+.sidebar-desktop-newsletter-9r .btn {
+    background-color: #b21e49;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1em;
+    text-transform: uppercase;
+    line-height: 2.5;
+    text-align: center;
+    box-shadow: 2px 2px 0px #DADADA;
+    height: 2.60em;
+    width: 0 auto;   
+}
+
+.sidebar-desktop-newsletter-9r a {
+    display: inline-block; 
+    color: #fff;
+    margin-top: 3%;
+    margin-left: 0%;
+    margin-right: 2%;
+    margin-bottom: 7%;
+    padding-top: 0%;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-bottom: 0%; 
+    width: 85%;
+}
+
+
+/*DESKTOP-<><><><><><><   ABOUT SECTION   <><><><><><><><><><><><><><><>*/
+/*DESKTOP-<><><><><><><><><><><><><><>   ABOUT SECTION*/
+
+/*"Contact Us"*/
+.about-top-info h1 {
+    font-size: 1.4em;
+    margin-left: 2%;
+    padding-top: 5%;
+}
+/*"Email, Telephone, Address"*/
+.about-top-info h4 {
+    font-size: 1.4em;
+    margin-left: 2%;
+}
+/*"Email, Telephone, Address--INFORMATION"*/
+.about-top-info h5 {
+    color: #000;
+    float: right;
+    font-size: 1.4em;
+    margin: -10%;
+    margin-top: -6%;
+    margin-left: 0%;
+    margin-right: 64%;
+   
+   
+}
+
+/*GOOGLE MAP*/
+.map-container iframe {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    height: auto;
+    padding-bottom: 0%;
+    margin-top: -25%;
+    margin-right: -30%;
+    width: 80%;
+}
+
+/*MAP-BEFORE ifram installed
+#about-top-info-img-map {
+         background-image: url("../img/map.png");
+}*/
+
+/*DESKTOP-use for Hollistic ccotrol*/
+.mission {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 15px 0;
+        padding-left: 2%;
+        margin-top: 20%;
+        width: 144%;
+}
+.mission h1 {
+    font-size: 1.4em;
+    margin-left: 0%;
+    margin-left: 0%;
+}
+
+/*DESKTOP-use for Hollistic ccotrol*/
+.team {
+        padding-top: 15px;
+        margin-left: 2%;
+}
+
+.team h1 {
+    font-size: 1.4em;
+
+}
+
+.team h2 {
+     font-size: 1.4em;
+}
+.team-member {
+        padding: 15px 0;
+}
+
+.team-img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        float: left;
+        margin-right: 20px;
+        padding-bottom: 40%;
+        width: 40%;
+}
+
+.team-name {
+
+}
+.team-title {
+    margin-top: -2%;
+}
+.team-description {
+}
+
+#team-img-jack {
+        background-image: url("../img/guy.png");
+}
+
+#team-img-lana {
+        background: url('../img/girl-1.png');
+}
+
+#team-img-willow {
+        background: url('../img/girl-0.png');
+}
+
+#team-img-jack,
+#team-img-lana,
+#team-img-willow{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.about h3 {
+    float: right;
+    padding-right: 55%;  
+    margin-top: -18%;
+    margin-right: 9%;
+    margin-bottom: -3%;
+    padding-top: -9%;
+    padding-bottom: -9%;
+}
+
+.about h4 {
+    float: right;
+    padding-right: 60%;
+    padding-left: 9%;
+    margin: -35%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: -39%;
+    margin-bottom: -8%;
+    height: -60%;
+}
+
+.about p {
+    width: 53%;
+    float: right;
+    margin-top: -30%;
+    padding-top: 0%; 
+    padding-left: 34%;
+    padding-right: -9%;
+    padding-bottom: -30%;
+    margin-top: -30%;
+    color: #000;
+}
+
+
+
+/*DESKTOP-ABOUT TOP--CONTACT US SECTION--to CONTROL H3s & H4s USE .ABOUT-BELLOW!! =============================*/
+.top-info h5 {
+    color: #000;
+    float: right;
+    padding-top: 0%; 
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 67%;
+    margin-top: -33%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+/* About Body <p>, & runs inlne with the add class below
+ too solve alignment issues with Top&Bottom Sections of the pgs below*/
+.top-info p {
+    color: #000;
+    padding-top: 2%;
+    padding-left: 0%;
+    padding-right: 18%;
+    padding-bottom: 0%;
+    margin: 0%;
+    margin-top: 0%;
+    margin-left: -5%;
+    margin-right: 0;
+    width: 100%;
+
+}
+/*runs on H-detail, R-detail, & --FAQ--<p>; NOTE currently Mobille is fine with this!*/
+
+/*DESKTOP-"Frequently Asked Questions"*/
+.top-info-faq h1 {
+    color: #000;
+    font-size: 1.4em;
+    margin-bottom: -3%;
+    margin-left: 2%;
+    padding-top: 5%;
+}
+.top-info-faq p {
+    color: #000;
+    padding-top: 6%;
+    padding-right: 18%;
+    margin-left: 2%;
+    margin-right: -6%;
+    width: 100%;
+
+
+}
+/*DESKTOP-ABOUT BOTTOM--TEAM SECTION--this is for the ABOUTT-img's BORDERS======================================*/
+.about-img {
+    float: left;
+
+    width: 20%;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 0.5%;   
+    padding-left: 0.5%;
+    padding-right: 10%;
+    padding-bottom: 0.5%;
+    height: auto;
+}
+
+.about h3 {
+    float: right;
+    padding-right: 55%;  
+    margin-top: -18%;
+    margin-right: 9%;
+    margin-bottom: -3%;
+    padding-top: -9%;
+    padding-bottom: -9%;
+}
+
+.about h4 {
+    float: right;
+    padding-right: 60%;
+    padding-left: 9%;
+    margin: -35%;
+    margin-top: 0%;
+    padding-top: 0%;
+    padding-bottom: -39%;
+    margin-bottom: -8%;
+    height: -60%;
+}
+
+.about p {
+    width: 53%;
+    float: right;
+    margin-top: -30%;
+    padding-top: 0%; 
+    padding-left: 34%;
+    padding-right: -9%;
+    padding-bottom: -30%;
+    margin-top: -30%;
+    color: #000;
+}
+
+/*DESKTOP-DETAILED PAGES ======================================================== */
+.news-img {
+    width: 100%;
+}
+
+/*<><>><>><><><><><><><><>   News Detail Pg    <><><><><>*/
+
+/*News Detail Pg --IMAGE-- */
+.newsd-i {
+    border-right: 1px solid gray;
+    clear: both;
+    float: left;
+    margin-left: 17%;
+    padding-top: 0%;
+    padding-right: 26.67%;
+    margin-top: 8%;
+    margin-bottom: -51%;
+    width: 57%;
+}
+/*News Detail Pg >>ONLY<<:"Wilco Announces"*/
+.top-info-newsd h1 {
+    border-right: 1px solid gray;
+    color: #000;
+    float: left;
+    font-size: 2.67em;
+    margin-top: 50%;
+    margin-left: -9%;
+    margin-right: 0%;
+    margin-bottom: -2%;
+    padding-top: 0%;
+    padding-right: 18.67%;
+    width: 83%;
+}
+
+/*DESKTOP-News Detail Pg:SUMMARY <p> UNDER "Wilco Announces"*/
+.top-info-newsd p {
+    border-right: 1px solid gray; 
+    clear: both;
+    color: #000;
+    font-size: 1.4em;   
+    padding-top: 3%;
+    padding-bottom: 11%;
+    margin-top: -2%;
+    margin-left: 0%;
+    padding-right: 13.67%;
+    width: 87%;
+}
+
+
+/*<><><><><><><>    News Detail Pg     <>><><><><><>
+: BODY <P> UNDER "Wilco Announces"*/
+.top-info-newsd-body p {
+    border-right: 1px solid gray;
+    clear: both;
+    font-size: 1.4em;
+    margin-top: -13%;
+    margin-left: 0%;
+    margin-bottom: -9%;
+    padding-top: 5%;
+    padding-right: 5.67%;
+    padding-bottom: 12%;
+    width: 95%;
+    
+}
+
+/*DESKTOP-"Newsletter Signup" on >> (homeNEWS-DETAIL) <<(p)*/
+
+.sidebar-newsletter-home-d {   
+   border-top: none;
+   border-bottom: 1px solid gray;
+   clear: both;
+   float: right;
+   margin-top: -528%;
+   margin-bottom: 9%;
+   margin-right: -130%;
+   padding-top: 0%;
+   padding-left: 8%;
+   padding-bottom: 18%;
+   width: 120%;
+}
+
+.sidebar-newsletter-home-d  h3 {
+    clear: both;
+    font-size: 2em;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+
+}
+/*White Text Box*/
+.sidebar-newsletter-home-d   input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 0%;
+    padding-top: 8%;
+    padding-bottom: 0%;
+    width: 95%;
+
+}
+
+/*Hot Pink Box*/
+.sidebar-newsletter-home-d   input {
+    margin-top: 0%;
+    margin-right: 0;
+    margin-bottom: -10%;
+    padding-top: 0%;
+    padding-bottom: -3%;
+    display: block;
+    width: 100%;
+}
+
+.sidebar-newsletter-home-d  .btn {
+    clear: both;
+     font-size: 1.4em;
+     margin-right: 3.67%;
+    width: 95%;
+
+}
+.sidebar-newsletter-home-d   a {
+    clear: both;
+    text-decoration: none;
+
+}
+
+/*DESKTOP-<><><><><><><><   Reviews Detail Pg   <><><><><*/
+/*Main Image*/ 
+.reviewsd-i {
+    clear: both;
+    margin-left: 20%;
+    padding-right: 0%;
+    width: 57%;
+}
+/*use for borders
+.reviewsd-i img {
+    
+   
+}*/
+
+/*"Beirut's New Album..."*/
+
+.top-info-reviewsd h1 {
+     border-right: 1px solid gray;
+    font-size: 2em;
+  
+    margin-left: 2%;
+
+   
+   padding-right: 53%;
+
+    width: 55%;
+}
+
+/*DESKTOP-SUMMARY UNDER:"Beirut's New Album..."*/
+.top-info-reviewsd p {
+    border-right: 1px solid gray;
+    clear: both;
+    display: inline-block;
+    float: left;
+    margin-top: -3%;
+    margin-left: 2%;
+    margin-right: -10%;
+    padding-right: -20%;
+    padding-bottom: 5%;
+    width: 108%;
+    
+
+}
+
+/*DESKTOP-Reviews DETAIL: Top-Section-Body <p> UNDER "Beirut's New Album..."*/
+.top-info-reviewsd-body p {
+    border-right: 1px solid gray;
+    clear: both;
+    display: inline-block;
+    margin-top: -3%;
+    margin-left: 2%;
+    margin-right: -10%;
+    padding-right: 8%; 
+    padding-bottom: 5%;
+}
+/*Last-Section-Body <p> UNDER "Beirut's New Album..."*/
+.top-info-reviewsd-body-last p {
+    border-right: 1px solid gray;
+    clear: both;
+    display: inline-block;
+    margin-top: -3%; 
+    margin-left: 2%;
+    margin-right: -10%;
+
+}
+
+/*DESKTOP-Reviews-DETAIL pg: "Newsletter Signup"*/
+.sidebar-newsletter-review-d {
+   border-top: none;
+   border-bottom: 1px solid gray;
+   clear: both;
+   float: right;
+   margin-top: -450%;
+   margin-bottom: 9%;
+   margin-right: -130%;
+   padding-top: 0%;
+   padding-left: 3%;
+   padding-right: -5%;
+   padding-bottom: 18%;
+   width: 100%;
+}
+
+.sidebar-newsletter-review-d  h3 {
+    clear: both;
+    font-size: 2em;
+    margin-top: 0%;
+    margin-left: 2%;
+    margin-bottom: 0%;
+
+}
+/*White Text Box*/
+.sidebar-newsletter-review-d   input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 0%;
+    padding-top: 8%;
+    padding-bottom: 0%;
+    width: 95%;
+
+}
+
+/*Hot Pink Box*/
+.sidebar-newsletter-review-d   input {
+    margin-top: 0%;
+    margin-right: 0;
+    margin-bottom: -10%;
+    padding-top: 0%;
+    padding-bottom: -3%;
+    display: block;
+    width: 100%;
+}
+
+.sidebar-newsletter-review-d  .btn {
+    clear: both;
+     font-size: 1.4em;
+     margin-right: 3.67%;
+    width: 95%;
+
+}
+.sidebar-newsletter-review-d  a {
+    clear: both;
+    text-decoration: none;
+
+}
+
+
+/*DESKTOP-FOOTER =================================================================*/
+
+footer {
+    clear: both;
+    border-top: 0.18em solid gray;
+    display: inline-block;
+    margin: 0 auto
+    padding-top:  5%;
+    padding-right: 18%;
+    padding-left: 10%;
+    width: 100%;
+}
+
+#footer-logo {
+    background-color: #000;
+    margin: 0 auto;
+    width:  30%;
+   
+  }
+
+}
+
+   
+/*DESKTOP-END*/
+
+   
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+ 
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
