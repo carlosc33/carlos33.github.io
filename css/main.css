@@ -41,16 +41,23 @@ nav {
 	float: right;
 	padding: 75px 40px;
 }
+
+/*padding here is for space between the nav elements: CONTACT, REVIEWS, ABOUT US, & FAQ etc..*/
 nav ul li {
 	display: inline-block;
-}
-nav ul li a {
-	text-transform: uppercase;
-	text-decoration: none;
-	font-size: 18px; 
-	color: #828282;
-	padding-left: 0px;
-}
+	}
+		nav ul li a {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 18px; 
+			color: #828282;
+			padding-left: 0px;
+			}
+
+				nav ul li a:hover{
+			 	color: #95dfe2;
+				}	
+
 header h2 {
 	width: auto;
 	font-family: 'Lora', serif;
@@ -86,7 +93,7 @@ header h2 span {
 }
 #work {
     background-color: #fff;
-   text-align: center;
+    text-align: center;
 }
 #work .full-width {
 	padding: 80px 0;
@@ -94,6 +101,7 @@ header h2 span {
 #work img {
 	padding-bottom: 3px;
 }
+
 #icon-ruby-mini-logo {
 	height: 144px;
 }
@@ -119,9 +127,66 @@ header h2 span {
 	color:#2b2b2b;
 	padding: 0 35px;
 }
+
+.m1-strategy {
+	background-color: #eee;
+	margin-top: -5%;
+	margin-left: 0%;
+	width: 100%;
+}
+
+.m1-strategy {
+
+	background-image: url('mpv.png');
+	background-size: cover;
+	clear: both;
+	height: 555px;
+	margin-top: 9%;
+}
+.m1-strategy img {
+	margin-top: 19%;
+	margin-left: 37.33%;
+}
+
+.m1s-top-info h1 {
+	clear: both;
+	color: #fff;
+	font-family:'Lora', serif;
+	margin-top: -67%;
+	margin-left: 0%;
+	padding-top: 8%;
+	text-align: center;
+	width: 100%;
+}
+.m1s-top-info h2 {
+	clear: both;
+	font-family:'Lora', serif;
+
+	margin-top: 39%;
+	margin-left: 0%;
+	padding-top: 0%;
+	text-align: center;
+	width: 100%;
+}
+
+.m1s-top-info p {
+	clear: both;
+	font-family:'Lora', serif;
+	font-size: 1.4em;
+	margin-left: 3%;
+	text-align: center;
+	width: 97%;
+}
+
+
+
+
+
+
 /***** CONTACT SECTION ****/
 #contact {
 	background-color: #ebebeb;
+	margin-top: 30%;
 }
 #contact .full-width {
 	padding: 111px 0;
@@ -146,6 +211,7 @@ header h2 span {
 #envelope {
 	padding: 0 10px 0 115px;
 }
+
 #email-header {
 	font-size: 32px;
 	font-weight: 400;
@@ -156,21 +222,25 @@ header h2 span {
 	font-weight: bold;
 	margin: 40px 0 0px 0;
 }
+/*"carloschico@my.unt.edu"*/
 #contact a {
 	text-decoration: none;
 	color:#c49075;
     font-weight: bold;
     font-size: 28px;
-}
+	}
+		#contact a:hover{
+			color: #95dfe2;
+		}
 #contact ul {
 	list-style: none;
-}
+	}
 #contact ul li {
-	display: inline-block;
-}
+			display: inline-block;
+}			  	
 #contact ul img {
-	font-size: 32px;
-	padding-right: 40px;
+			font-size: 32px;
+			padding-right: 40px;
 }
 
 
