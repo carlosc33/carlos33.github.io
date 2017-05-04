@@ -1,0 +1,288 @@
+/***** BASE STYLES *****/
+body{
+		font-family: 'Source Sans Pro', sans-serif;
+}
+#about{
+    height: 800px;
+}
+#work{
+	height: 600px;
+}
+#contact {
+    height: 666px;
+}
+/***** GRID *****/
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+.half-width {
+	width:  600px;
+	float: left;
+}
+.third-width {
+	width: 400px;
+	float: left;
+}
+/***** HEADER *****/
+header {
+	height: 900px;
+	background: url('hero.png');
+	background-size: cover;
+	padding-top: 2px;
+	width: 100%;
+}
+header h1 {
+	font-family: 'Lora', serif;
+	font-size: 30px;
+	color: #bbc085;
+	padding: 50px 0;
+}
+nav {
+	float: right;
+	padding: 75px 40px;
+}
+
+/*padding here is for space between the nav elements: CONTACT, REVIEWS, ABOUT US, & FAQ etc..*/
+nav ul li {
+	display: inline-block;
+	}
+		nav ul li a {
+			text-transform: uppercase;
+			text-decoration: none;
+			font-size: 18px; 
+			color: #828282;
+			padding-left: 0px;
+			}
+
+				nav ul li a:hover{
+			 	color: #95dfe2;
+				}	
+
+header h2 {
+	width: auto;
+	font-family: 'Lora', serif;
+	font-size: 72px;
+	line-height: ;
+	color: #9b9b9b;
+	padding: 20px 0;
+}
+header h2 span {
+	font-family: 'Lora', serif;
+	color: #2b2b2b;
+}
+/***** ABOUT SECTION *****/
+
+/*About-Section: Horizontal + Control*/ 
+#about {
+	margin-bottom: 34%;
+}
+#about .full-width {
+    padding: 80px 0;
+}
+#about h2 {
+    font-family:'Lora', serif;
+    font-size: 36px;
+    color: #2b2b2b;
+}
+#about p {
+    font-size: 21px;
+    color: #7f7f7f
+    line-height: 40px;
+    padding-right: 50px;
+}
+
+/*** MOBILE 1st SECTION ***/
+.mobile-first {
+	margin-top: -13%;
+
+}
+
+.m1-strategy {
+	background-color: #eee;
+	margin-top: 20%;
+	margin-left: 0%;
+	margin-bottom: 0%;
+	width: 100%;
+}
+
+.m1-strategy {
+
+	background-image: url('mpv.png');
+	background-size: cover;
+	clear: both;
+	height: 555px;
+	margin-top: 30%;
+	margin-bottom: 0%;
+	width: 100%;
+
+}
+
+
+.m1-strategy img {
+	margin-top: 19%;
+	margin-left: 36.33%;
+}
+/*"Work Samples..."*/
+#mobile-first h2 {
+	text-align: left;
+	font-family:'Lora', serif;
+	font-size: 24px;
+	margin: 0 auto;
+	margin-bottom: -38%;
+	padding-right: 1055px;
+	width: 0;
+
+}
+
+/*Resonsive Mobile Development*/
+.m1s-top-info h1 {
+	clear: both;
+	color: #000;
+	font-family:'Lora', serif;
+	margin-top: -6%;
+	margin-left: 0%;
+	padding-top: 8%;
+	text-align: center;
+	width: 100%;
+}
+
+.m1s-top-info p {
+	clear: both;
+	color: #000;
+	font-family:'Lora', serif;
+	font-size: 1.4em;
+	margin-left: 3%;
+	text-align: center;
+	width: 97%;
+}
+
+
+
+/***** WORK SECTION *****/
+#work {
+	margin-top: 34%;
+}
+#work {
+	height: 555px;
+	background-image: url('mpv.png');
+	background-size: cover;
+	width: 100%;
+}
+#work {
+    background-color: #fff;
+    text-align: center;
+}
+#work .full-width {
+	padding: 80px 0;
+}
+#work img {
+	padding-bottom: 3px;
+}
+
+#icon-ruby-mini-logo {
+	height: 144px;
+}
+#work h2 {
+	text-align: left;
+	font-family:'Lora', serif;
+	font-size: 24px;
+	margin: 0 auto;
+	padding-right: 1055px;
+	width: 0;
+
+}
+#work h3 {
+	font-family:'Lora', serif;
+	font-size: 24px;
+	width:
+	margin: 0 auto;
+}
+#work p {
+	font-family: 'Roboto';
+	font-size: 18px;
+	line-height:
+	color:#2b2b2b;
+	padding: 0 35px;
+}
+
+
+
+
+
+/***** CONTACT SECTION ****/
+#contact {
+	background-color: #ebebeb;
+	margin-top: 50%;
+}
+#contact .full-width {
+	padding: 111px 0;
+	padding-top: 120px;
+	padding-bottom: 20px;
+}
+#contact-image {
+	border: 12px solid #fff;
+}
+#email-header {
+	padding-left: 115px;
+	padding-top: 8px;
+}
+#contact h2, #socialmedia-header, #contact {
+	padding-left: 115px;
+	padding-top: 69px;
+}
+#contact h2 {
+	font-family: 'Lora', serif;
+	font-size: 36px;
+}
+#envelope {
+	padding: 0 10px 0 115px;
+}
+
+#email-header {
+	font-size: 32px;
+	font-weight: 400;
+	margin: -30px 0 5px 0;
+}
+#socialmedial-header {
+	font-size: 29px;
+	font-weight: bold;
+	margin: 40px 0 0px 0;
+}
+/*"carloschico@my.unt.edu"*/
+#contact a {
+	text-decoration: none;
+	color:#c49075;
+    font-weight: bold;
+    font-size: 28px;
+	}
+		#contact a:hover{
+			color: #95dfe2;
+		}
+#contact ul {
+	list-style: none;
+	}
+#contact ul li {
+			display: inline-block;
+}			  	
+#contact ul img {
+			font-size: 32px;
+			padding-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
